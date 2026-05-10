@@ -31,6 +31,7 @@ struct RootView: View {
                 Label("設定", systemImage: "gearshape")
             }
         }
+        .tint(Color(red: 0.95, green: 0.22, blue: 0.48))
     }
 }
 
@@ -39,18 +40,29 @@ private struct HomeView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
+            VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("偏差値メーカー")
-                        .font(.largeTitle.bold())
+                    HStack(spacing: 8) {
+                        Image(systemName: "sparkles")
+                            .font(.title.bold())
+                            .foregroundStyle(.yellow)
+                        Text("偏差値メーカー")
+                            .font(.largeTitle.bold())
+                    }
+
                     Text("いろんな自分を、だいたい偏差値で遊ぶ。")
-                        .font(.headline)
-                        .foregroundStyle(.secondary)
-                    Text("結果はエンタメ用の簡易診断です。気軽に笑って、スクショして、また遊べます。")
+                        .font(.title3.bold())
+                    Text("結果はエンタメ用の簡易診断です。スクショ映えする一発ネタとして楽しめます。")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
                 .padding(.top, 8)
+
+                HStack(spacing: 8) {
+                    GameBadge(text: "\(DiagnosisCatalog.diagnoses.count)診断", color: .pink)
+                    GameBadge(text: "各15問", color: .teal)
+                    GameBadge(text: "数字入力あり", color: .purple)
+                }
 
                 NavigationLink {
                     DiagnosisFlowView(diagnosis: featured)
@@ -60,10 +72,10 @@ private struct HomeView: View {
                 .buttonStyle(.plain)
 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("すぐ遊べる診断")
+                    Text("ゲームモード")
                         .font(.title3.bold())
 
-                    ForEach(DiagnosisCatalog.diagnoses) { diagnosis in
+                    ForEach(Array(DiagnosisCatalog.diagnoses.dropFirst())) { diagnosis in
                         NavigationLink {
                             DiagnosisFlowView(diagnosis: diagnosis)
                         } label: {
@@ -82,30 +94,37 @@ private struct HomeView: View {
 
 private struct DiagnosisListView: View {
     var body: some View {
-        List {
-            ForEach(DiagnosisCategory.allCases) { category in
-                Section(category.rawValue) {
-                    ForEach(DiagnosisCatalog.diagnoses.filter { $0.category == category }) { diagnosis in
-                        NavigationLink {
-                            DiagnosisFlowView(diagnosis: diagnosis)
-                        } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: diagnosis.category.symbolName)
-                                    .foregroundStyle(diagnosis.category.accentColor)
-                                    .frame(width: 28)
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(diagnosis.title)
-                                    Text(diagnosis.summary)
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                ForEach(DiagnosisCategory.allCases) { category in
+                    let diagnoses = DiagnosisCatalog.diagnoses.filter { $0.category == category }
+
+                    if !diagnoses.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Image(systemName: category.symbolName)
+                                    .foregroundStyle(category.accentColor)
+                                Text(category.rawValue)
+                                    .font(.headline)
+                                Spacer()
+                            }
+
+                            ForEach(diagnoses) { diagnosis in
+                                NavigationLink {
+                                    DiagnosisFlowView(diagnosis: diagnosis)
+                                } label: {
+                                    DiagnosisCard(diagnosis: diagnosis)
                                 }
+                                .buttonStyle(.plain)
                             }
                         }
                     }
                 }
             }
+            .padding()
         }
         .navigationTitle("偏差値一覧")
+        .appBackground()
     }
 }
 
@@ -158,7 +177,8 @@ private struct SettingsView: View {
         List {
             Section("このアプリについて") {
                 LabeledContent("用途", value: "エンタメ診断")
-                LabeledContent("初期版", value: "MVP 0.1")
+                LabeledContent("バージョン", value: "MVP 0.2")
+                LabeledContent("診断数", value: "\(DiagnosisCatalog.diagnoses.count)")
             }
 
             Section("注意") {
@@ -174,4 +194,3 @@ private struct SettingsView: View {
     RootView()
         .environmentObject(HistoryStore())
 }
-

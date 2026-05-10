@@ -7,7 +7,15 @@ struct ResultView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 18) {
-                VStack(spacing: 8) {
+                VStack(spacing: 10) {
+                    Text("RESULT CARD")
+                        .font(.caption.bold())
+                        .foregroundStyle(result.category.accentColor)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(.white.opacity(0.9))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+
                     Text(result.diagnosisTitle)
                         .font(.headline)
                         .foregroundStyle(.secondary)
@@ -15,17 +23,22 @@ struct ResultView: View {
                         .font(.largeTitle.bold())
                         .multilineTextAlignment(.center)
                 }
-                .padding(.top, 10)
+                .padding(.top, 12)
 
                 ScoreBadge(score: result.deviationScore, color: result.category.accentColor)
 
-                Text(result.comment)
-                    .font(.body)
-                    .foregroundStyle(.secondary)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .background(.white.opacity(0.9))
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                VStack(alignment: .leading, spacing: 8) {
+                    Label("判定コメント", systemImage: "text.bubble.fill")
+                        .font(.caption.bold())
+                        .foregroundStyle(result.category.accentColor)
+                    Text(result.comment)
+                        .font(.body)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding()
+                .background(.white.opacity(0.92))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
 
                 ShareLink(item: result.shareText) {
                     Label("結果をシェア", systemImage: "square.and.arrow.up")
@@ -71,4 +84,3 @@ struct ResultView: View {
         )
     }
 }
-
