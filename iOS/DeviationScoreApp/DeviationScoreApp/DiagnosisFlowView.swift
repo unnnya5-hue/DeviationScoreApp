@@ -9,6 +9,7 @@ struct DiagnosisFlowView: View {
     @State private var currentIndex = 0
     @State private var answers: [String: AnswerOption] = [:]
     @State private var result: DiagnosisResult?
+    @State private var shouldDismissFlowAfterResult = false
 
     private var currentQuestion: DiagnosisQuestion {
         diagnosis.questions[currentIndex]
@@ -68,8 +69,14 @@ struct DiagnosisFlowView: View {
         .appBackground()
         .navigationDestination(item: $result) { result in
             ResultView(result: result) {
-                dismiss()
+                returnToDiagnosisList()
             }
+        }
+        .onChange(of: result) { _, newValue in
+            guard shouldDismissFlowAfterResult, newValue == nil else { return }
+
+            shouldDismissFlowAfterResult = false
+            dismiss()
         }
     }
 
@@ -94,6 +101,11 @@ struct DiagnosisFlowView: View {
             result = madeResult
         }
     }
+
+    private func returnToDiagnosisList() {
+        shouldDismissFlowAfterResult = true
+        result = nil
+    }
 }
 
 #Preview {
@@ -102,4 +114,3 @@ struct DiagnosisFlowView: View {
             .environmentObject(HistoryStore())
     }
 }
-
