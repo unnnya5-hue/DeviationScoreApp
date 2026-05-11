@@ -11,7 +11,6 @@ struct DiagnosisFlowView: View {
     @State private var answers: [String: DiagnosisAnswer] = [:]
     @State private var numberText = ""
     @State private var result: DiagnosisResult?
-    @State private var shouldDismissFlowAfterResult = false
     @State private var timerStartedAt: Date?
     @State private var elapsedSeconds = 0
 
@@ -39,6 +38,26 @@ struct DiagnosisFlowView: View {
     }
 
     var body: some View {
+        Group {
+            if let result {
+                ResultView(result: result) {
+                    closeFlow()
+                }
+            } else {
+                questionContent
+            }
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("完了") {
+                    isNumberFocused = false
+                }
+            }
+        }
+    }
+
+    private var questionContent: some View {
         ScrollView {
             VStack(spacing: 16) {
                 stageHeader
@@ -84,7 +103,7 @@ struct DiagnosisFlowView: View {
                     .disabled(currentIndex == 0)
 
                     Button {
-                        returnToDiagnosisList()
+                        closeFlow()
                     } label: {
                         Label("やめる", systemImage: "xmark")
                             .frame(maxWidth: .infinity)
@@ -108,25 +127,6 @@ struct DiagnosisFlowView: View {
         .onReceive(timer) { now in
             guard tracksElapsedTime, result == nil, let timerStartedAt else { return }
             elapsedSeconds = Int(now.timeIntervalSince(timerStartedAt))
-        }
-        .navigationDestination(item: $result) { result in
-            ResultView(result: result) {
-                returnToDiagnosisList()
-            }
-        }
-        .onChange(of: result) { _, newValue in
-            guard shouldDismissFlowAfterResult, newValue == nil else { return }
-
-            shouldDismissFlowAfterResult = false
-            dismiss()
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
-                Button("完了") {
-                    isNumberFocused = false
-                }
-            }
         }
     }
 
@@ -303,9 +303,9 @@ struct DiagnosisFlowView: View {
         }
     }
 
-    private func returnToDiagnosisList() {
-        shouldDismissFlowAfterResult = true
-        result = nil
+    private func closeFlow() {
+        isNumberFocused = false
+        dismiss()
     }
 
     private func startTimerIfNeeded() {
