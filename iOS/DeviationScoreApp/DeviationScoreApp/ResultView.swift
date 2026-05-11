@@ -27,6 +27,22 @@ struct ResultView: View {
 
                 ScoreBadge(score: result.deviationScore, color: result.category.accentColor)
 
+                if let elapsedTimeText = result.elapsedTimeText {
+                    HStack {
+                        Label("クリアタイム", systemImage: "timer")
+                            .font(.caption.bold())
+                            .foregroundStyle(result.category.accentColor)
+                        Spacer()
+                        Text(elapsedTimeText)
+                            .font(.title2.bold())
+                            .monospacedDigit()
+                            .foregroundStyle(result.category.accentColor)
+                    }
+                    .padding()
+                    .background(.white.opacity(0.92))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+
                 VStack(alignment: .leading, spacing: 8) {
                     Label("判定コメント", systemImage: "text.bubble.fill")
                         .font(.caption.bold())
@@ -78,7 +94,8 @@ struct ResultView: View {
                 deviationScore: 68,
                 rankTitle: "なかなか上位勢",
                 comment: "周りから一目置かれる場面がありそう。得意分野として名乗ってもよさげです。",
-                measuredAt: Date()
+                measuredAt: Date(),
+                elapsedSeconds: nil
             ),
             closeAction: {}
         )

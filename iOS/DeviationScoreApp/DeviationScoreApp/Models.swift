@@ -191,12 +191,26 @@ struct DiagnosisResult: Identifiable, Codable, Hashable {
     let rankTitle: String
     let comment: String
     let measuredAt: Date
+    let elapsedSeconds: Int?
 
     var shareText: String {
-        """
-        \(diagnosisTitle)の結果は偏差値\(deviationScore)「\(rankTitle)」でした。
+        let timeText = elapsedSeconds.map { "\nタイム: \(Self.formatElapsedTime($0))" } ?? ""
+
+        return """
+        \(diagnosisTitle)の結果は偏差値\(deviationScore)「\(rankTitle)」でした。\(timeText)
         \(comment)
         #偏差値メーカー
         """
+    }
+
+    var elapsedTimeText: String? {
+        elapsedSeconds.map { Self.formatElapsedTime($0) }
+    }
+
+    static func formatElapsedTime(_ seconds: Int) -> String {
+        let minutes = seconds / 60
+        let remainingSeconds = seconds % 60
+
+        return String(format: "%d:%02d", minutes, remainingSeconds)
     }
 }

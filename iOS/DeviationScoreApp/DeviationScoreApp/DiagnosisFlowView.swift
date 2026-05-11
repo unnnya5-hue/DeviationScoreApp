@@ -12,6 +12,10 @@ struct DiagnosisFlowView: View {
     @State private var numberText = ""
     @State private var result: DiagnosisResult?
     @State private var shouldDismissFlowAfterResult = false
+    @State private var timerStartedAt: Date?
+    @State private var elapsedSeconds = 0
+
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     private var currentQuestion: DiagnosisQuestion {
         diagnosis.questions[currentIndex]
@@ -19,6 +23,10 @@ struct DiagnosisFlowView: View {
 
     private var progress: Double {
         Double(currentIndex + 1) / Double(diagnosis.questions.count)
+    }
+
+    private var tracksElapsedTime: Bool {
+        diagnosis.id == "iq-like"
     }
 
     private var numericValue: Double? {
@@ -92,9 +100,14 @@ struct DiagnosisFlowView: View {
         .appBackground()
         .onAppear {
             loadNumberDraft()
+            startTimerIfNeeded()
         }
         .onChange(of: currentIndex) { _, _ in
             loadNumberDraft()
+        }
+        .onReceive(timer) { now in
+            guard tracksElapsedTime, result == nil, let timerStartedAt else { return }
+            elapsedSeconds = Int(now.timeIntervalSince(timerStartedAt))
         }
         .navigationDestination(item: $result) { result in
             ResultView(result: result) {
@@ -128,6 +141,17 @@ struct DiagnosisFlowView: View {
                     .font(.caption.bold())
                     .monospacedDigit()
                     .foregroundStyle(.secondary)
+            }
+
+            if tracksElapsedTime {
+                Label(DiagnosisResult.formatElapsedTime(elapsedSeconds), systemImage: "timer")
+                    .font(.caption.bold())
+                    .monospacedDigit()
+                    .foregroundStyle(diagnosis.category.accentColor)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                    .background(.white.opacity(0.78))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
 
             GeometryReader { proxy in
@@ -190,7 +214,7 @@ struct DiagnosisFlowView: View {
     private func numberInput(_ config: NumericQuestionConfig) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .firstTextBaseline, spacing: 10) {
-                TextField(config.placeholder, text: $numberText)
+                TextField("", text: $numberText)
                     .font(.system(size: 44, weight: .black, design: .rounded))
                     .monospacedDigit()
                     .keyboardType(.decimalPad)
@@ -207,10 +231,6 @@ struct DiagnosisFlowView: View {
                         .frame(minWidth: 44, alignment: .leading)
                 }
             }
-
-            Text(config.helperText)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
 
             Button {
                 submitNumber()
@@ -256,7 +276,11 @@ struct DiagnosisFlowView: View {
                 currentIndex += 1
             }
         } else {
-            let madeResult = DiagnosisEngine.makeResult(for: diagnosis, answers: answers)
+            let madeResult = DiagnosisEngine.makeResult(
+                for: diagnosis,
+                answers: answers,
+                elapsedSeconds: tracksElapsedTime ? elapsedSeconds : nil
+            )
             historyStore.save(madeResult)
             result = madeResult
         }
@@ -286,6 +310,13 @@ struct DiagnosisFlowView: View {
     private func returnToDiagnosisList() {
         shouldDismissFlowAfterResult = true
         result = nil
+    }
+
+    private func startTimerIfNeeded() {
+        guard tracksElapsedTime, timerStartedAt == nil else { return }
+
+        timerStartedAt = Date()
+        elapsedSeconds = 0
     }
 }
 

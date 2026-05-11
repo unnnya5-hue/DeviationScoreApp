@@ -1,7 +1,11 @@
 import Foundation
 
 enum DiagnosisEngine {
-    static func makeResult(for diagnosis: Diagnosis, answers: [String: DiagnosisAnswer]) -> DiagnosisResult {
+    static func makeResult(
+        for diagnosis: Diagnosis,
+        answers: [String: DiagnosisAnswer],
+        elapsedSeconds: Int? = nil
+    ) -> DiagnosisResult {
         let rawScore = diagnosis.questions.reduce(0) { total, question in
             total + score(for: question, answer: answers[question.id])
         }
@@ -22,7 +26,8 @@ enum DiagnosisEngine {
             deviationScore: deviation,
             rankTitle: band.title,
             comment: band.comment,
-            measuredAt: Date()
+            measuredAt: Date(),
+            elapsedSeconds: elapsedSeconds
         )
     }
 
