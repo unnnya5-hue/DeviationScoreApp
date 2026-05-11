@@ -1,0 +1,7294 @@
+[
+  {
+    "category" : "恋愛",
+    "estimatedMinutes" : 4,
+    "id" : "marriage",
+    "questions" : [
+      {
+        "id" : "marriage-1",
+        "scoring" : {
+          "idealMax" : 39,
+          "idealMin" : 24,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 58,
+          "zeroBelow" : 18
+        },
+        "text" : "あなたの年齢は？",
+        "type" : "number",
+        "unit" : "歳"
+      },
+      {
+        "id" : "marriage-2",
+        "scoring" : {
+          "idealMax" : 850,
+          "idealMin" : 180,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 850,
+          "zeroBelow" : 180
+        },
+        "text" : "現在の年収は？",
+        "type" : "number",
+        "unit" : "万円"
+      },
+      {
+        "id" : "marriage-3",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 36,
+          "zeroBelow" : 0
+        },
+        "text" : "生活防御資金は何か月分くらいありますか？",
+        "type" : "number",
+        "unit" : "か月"
+      },
+      {
+        "id" : "marriage-4",
+        "scoring" : {
+          "idealMax" : 18,
+          "idealMin" : 0.5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 96,
+          "zeroBelow" : 0
+        },
+        "text" : "気になる人への平均返信時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "marriage-5",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 120,
+          "zeroBelow" : 0
+        },
+        "text" : "月に自分磨きへ使う金額は？",
+        "type" : "number",
+        "unit" : "千円"
+      },
+      {
+        "id" : "marriage-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "初回デートの店選びで近い動きは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "相手の返信が半日ないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "価値観がズレた話題が出たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "予定変更が起きたときの第一手は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "家事分担の話が出たときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "金銭感覚の違いを感じたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "自分の弱点を聞かれたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "相手の趣味が未知ジャンルだったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "会話が少し止まったときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "marriage-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "小さなケンカのあとに近い動きは？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "婚活",
+    "summary" : "年齢、年収、生活力、距離感をまるごとネタ採点。",
+    "title" : "婚活偏差値"
+  },
+  {
+    "category" : "知識",
+    "estimatedMinutes" : 4,
+    "id" : "iq-like",
+    "questions" : [
+      {
+        "id" : "iq-1",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 73
+        },
+        "text" : "17 + 28 × 2 = ?",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-2",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 21
+        },
+        "text" : "144 ÷ 12 + 9 = ?",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-3",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 48
+        },
+        "text" : "3, 6, 12, 24 の次は？",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-4",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 36
+        },
+        "text" : "240の15%はいくつ？",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-5",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 1200
+        },
+        "text" : "5本で750円のペン。8本なら何円？",
+        "type" : "number",
+        "unit" : "円"
+      },
+      {
+        "id" : "iq-6",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 47
+        },
+        "text" : "2, 5, 11, 23 の次は？",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-7",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 10
+        },
+        "text" : "A=1, C=3, F=6。Jはいくつ？",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "iq-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "解けない問題に当たったときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "説明文が長いときの読み方は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "選択肢が紛らわしいときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "途中で計算が怪しくなったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "新しいルールを覚えるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "答えが直感とズレたときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "時間が残り少ないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "iq-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "この診断の結果の扱い方は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "IQ風",
+    "summary" : "計算、規則性、推理っぽさをIQ風に遊ぶ診断。",
+    "title" : "IQ風クイズ偏差値"
+  },
+  {
+    "category" : "コミュ力",
+    "estimatedMinutes" : 4,
+    "id" : "communication",
+    "questions" : [
+      {
+        "id" : "communication-1",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 7,
+          "zeroBelow" : 0
+        },
+        "text" : "初対面の場で名前を覚えられる人数は？",
+        "type" : "number",
+        "unit" : "人"
+      },
+      {
+        "id" : "communication-2",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 8,
+          "zeroBelow" : 0
+        },
+        "text" : "1分で出せる雑談テーマはいくつ？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "communication-3",
+        "scoring" : {
+          "idealMax" : 24,
+          "idealMin" : 0.5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 120,
+          "zeroBelow" : 0
+        },
+        "text" : "LINEやDMを平均どれくらい寝かせますか？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "communication-4",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "closest",
+          "target" : 50,
+          "zeroAbove" : 45
+        },
+        "text" : "会話中、自分が話す割合は何%くらい？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "communication-5",
+        "scoring" : {
+          "idealMax" : 40,
+          "idealMin" : 5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 180,
+          "zeroBelow" : 0
+        },
+        "text" : "沈黙が続いても平気な秒数は？",
+        "type" : "number",
+        "unit" : "秒"
+      },
+      {
+        "id" : "communication-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "知らない人が輪に入ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "場が少し重くなったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "誘いを断る必要があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "相手の話が長くなったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "SNSで初めて絡むときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "褒めるタイミングが来たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "自分ばかり話している気がしたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "話題が尽きたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "相手のテンションが読めないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "communication-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "グループで意見が割れたら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "コミュ力",
+    "summary" : "会話、空気感、SNS距離感、沈黙耐性をゲーム判定。",
+    "title" : "コミュ力偏差値"
+  },
+  {
+    "category" : "仕事",
+    "estimatedMinutes" : 4,
+    "id" : "job-change",
+    "questions" : [
+      {
+        "id" : "job-change-1",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 30,
+          "zeroBelow" : 0
+        },
+        "text" : "現在の職種経験は何年くらい？",
+        "type" : "number",
+        "unit" : "年"
+      },
+      {
+        "id" : "job-change-2",
+        "scoring" : {
+          "idealMax" : 24,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 24,
+          "zeroBelow" : 0
+        },
+        "text" : "職務経歴書を最後に更新したのは何か月前？",
+        "type" : "number",
+        "unit" : "か月前"
+      },
+      {
+        "id" : "job-change-3",
+        "scoring" : {
+          "idealMax" : 25,
+          "idealMin" : 5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 80,
+          "zeroBelow" : 0
+        },
+        "text" : "希望年収アップ率は何%くらい？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "job-change-4",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 60,
+          "zeroBelow" : 0
+        },
+        "text" : "1か月で応募できそうな企業数は？",
+        "type" : "number",
+        "unit" : "社"
+      },
+      {
+        "id" : "job-change-5",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 8,
+          "zeroBelow" : 0
+        },
+        "text" : "週にスキル学習へ使える時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "job-change-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "実績を聞かれたときの出し方は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "転職理由を聞かれたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "希望条件が全部は通らなそうなときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "現職の不満が強い時期は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "面接前日の準備は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "業界研究の進め方は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "成果物を見せる場面では？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "退職交渉を考えるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "年収以外の条件を見るときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-change-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "内定が出た直後は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "転職",
+    "summary" : "職務経歴、準備力、希望条件の現実味をゆるく測定。",
+    "title" : "転職偏差値"
+  },
+  {
+    "category" : "就活",
+    "estimatedMinutes" : 4,
+    "id" : "job-hunting",
+    "questions" : [
+      {
+        "id" : "job-hunting-1",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "企業研究した会社数は？",
+        "type" : "number",
+        "unit" : "社"
+      },
+      {
+        "id" : "job-hunting-2",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 8,
+          "zeroBelow" : 0
+        },
+        "text" : "模擬面接をした回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "job-hunting-3",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 8,
+          "zeroBelow" : 0
+        },
+        "text" : "エントリーシートの下書き数は？",
+        "type" : "number",
+        "unit" : "本"
+      },
+      {
+        "id" : "job-hunting-4",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "closest",
+          "target" : 60,
+          "zeroAbove" : 45
+        },
+        "text" : "自己PRを話す長さは何秒くらい？",
+        "type" : "number",
+        "unit" : "秒"
+      },
+      {
+        "id" : "job-hunting-5",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "exact",
+          "target" : 111
+        },
+        "text" : "SPI風: 12 × 8 + 15 = ?",
+        "type" : "number",
+        "unit" : ""
+      },
+      {
+        "id" : "job-hunting-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "自己PRの組み立て方は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "志望動機を書くときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "逆質問を用意するときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "選考に落ちたあと最初にすることは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "面接当日の朝は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "締切が重なったときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "自己分析で詰まったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "ESを誰かに見せるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "第一志望以外の扱いは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "job-hunting-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "緊張が強い面接では？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "就職",
+    "summary" : "自己PR、企業研究、面接準備、SPIっぽさを採点。",
+    "title" : "就職偏差値"
+  },
+  {
+    "category" : "ネタ",
+    "estimatedMinutes" : 4,
+    "id" : "buzz",
+    "questions" : [
+      {
+        "id" : "buzz-1",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 30,
+          "zeroBelow" : 0
+        },
+        "text" : "1週間に投稿する回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "buzz-2",
+        "scoring" : {
+          "idealMax" : 500,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 500,
+          "zeroBelow" : 0
+        },
+        "text" : "最近の投稿のいいね中央値は？",
+        "type" : "number",
+        "unit" : "件"
+      },
+      {
+        "id" : "buzz-3",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "closest",
+          "target" : 80,
+          "zeroAbove" : 120
+        },
+        "text" : "投稿文の平均文字数は？",
+        "type" : "number",
+        "unit" : "文字"
+      },
+      {
+        "id" : "buzz-4",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 10,
+          "zeroBelow" : 0
+        },
+        "text" : "3分で出せる投稿ネタはいくつ？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "buzz-5",
+        "scoring" : {
+          "idealMax" : 3,
+          "idealMin" : 0.5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 10,
+          "zeroBelow" : 0
+        },
+        "text" : "1日のSNS時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "buzz-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "投稿の一文目を決めるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "ネタを見つけた直後は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "画像の見せ方を迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "流行ネタに乗るときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "コメントが伸びてきたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "投稿前に少し不安があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "自虐ネタを出すときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "短い動画の見せ場は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "伸びなかった投稿は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "buzz-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "バズった翌日は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "バズり",
+    "summary" : "SNS勘、投稿センス、ネタの初速をミニゲーム化。",
+    "title" : "バズり偏差値"
+  },
+  {
+    "category" : "コミュ力",
+    "estimatedMinutes" : 4,
+    "id" : "line-reply",
+    "questions" : [
+      {
+        "id" : "line-reply-1",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 0.2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 96,
+          "zeroBelow" : 0
+        },
+        "text" : "平均返信時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "line-reply-2",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "未返信のまま残る件数は？",
+        "type" : "number",
+        "unit" : "件"
+      },
+      {
+        "id" : "line-reply-3",
+        "scoring" : {
+          "maxPoint" : 4,
+          "mode" : "closest",
+          "target" : 45,
+          "zeroAbove" : 80
+        },
+        "text" : "1返信の平均文字数は？",
+        "type" : "number",
+        "unit" : "文字"
+      },
+      {
+        "id" : "line-reply-4",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 90,
+          "zeroBelow" : 0
+        },
+        "text" : "スタンプだけで返す割合は？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "line-reply-5",
+        "scoring" : {
+          "idealMax" : 120,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 720,
+          "zeroBelow" : 0
+        },
+        "text" : "既読後に考える平均時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "line-reply-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "相手の温度が低そうなときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "話題が終わりかけたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "長文が来たときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "深夜に通知に気づいたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "返しづらい相談が来たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "誘いへの返答を迷うときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "グループLINEが荒れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "既読をつけたあと忘れていたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "絵文字を入れるか迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "line-reply-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "返事がそっけなかったと言われたら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "返信",
+    "summary" : "返信速度、既読耐性、文量、スタンプ距離感を測定。",
+    "title" : "LINE返信偏差値"
+  },
+  {
+    "category" : "お金",
+    "estimatedMinutes" : 4,
+    "id" : "money-sense",
+    "questions" : [
+      {
+        "id" : "money-sense-1",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 80,
+          "zeroBelow" : 0
+        },
+        "text" : "毎月の貯金率は？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "money-sense-2",
+        "scoring" : {
+          "idealMax" : 6,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "使っているサブスク数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "money-sense-3",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 90,
+          "zeroBelow" : 0
+        },
+        "text" : "月の自由費は手取りの何%？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "money-sense-4",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 10,
+          "zeroBelow" : 0
+        },
+        "text" : "月の衝動買い回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "money-sense-5",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 30,
+          "zeroBelow" : 0
+        },
+        "text" : "財布やアプリの残高確認頻度は？",
+        "type" : "number",
+        "unit" : "回\/週"
+      },
+      {
+        "id" : "money-sense-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "欲しい物を見つけた直後は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "友人との会計で迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "セール通知が来たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "旅行の予算を組むときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "給料日の夜は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "大きな買い物の前は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "割り勘が少しズレたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "ポイント還元を見たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "節約が続かないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "money-sense-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "急な誘いが来たら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "お金",
+    "summary" : "貯金、自由費、衝動買い、サブスクの扱いを判定。",
+    "title" : "金銭感覚偏差値"
+  },
+  {
+    "category" : "生活",
+    "estimatedMinutes" : 4,
+    "id" : "life-skill",
+    "questions" : [
+      {
+        "id" : "life-skill-1",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 21,
+          "zeroBelow" : 0
+        },
+        "text" : "週の自炊回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "life-skill-2",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 7,
+          "zeroBelow" : 0
+        },
+        "text" : "洗濯物を畳まず置く平均日数は？",
+        "type" : "number",
+        "unit" : "日"
+      },
+      {
+        "id" : "life-skill-3",
+        "scoring" : {
+          "idealMax" : 8.5,
+          "idealMin" : 6.5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 12,
+          "zeroBelow" : 3
+        },
+        "text" : "平均睡眠時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "life-skill-4",
+        "scoring" : {
+          "idealMax" : 90,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 90,
+          "zeroBelow" : 0
+        },
+        "text" : "冷蔵庫の中身を把握している割合は？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "life-skill-5",
+        "scoring" : {
+          "idealMax" : 4,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "月の公共料金チェック回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "life-skill-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "帰宅後に疲れている日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "食材が少し余ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "掃除のタイミングは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "朝の準備が詰まったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "日用品が切れそうなときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "予定が多い週の家事は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "体調が怪しい朝は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "部屋に人が来る予定が入ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "外食が続いたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "life-skill-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "寝る前にスマホが止まらないときは？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "生活力",
+    "summary" : "自炊、掃除、洗濯、睡眠、家計の地力を測定。",
+    "title" : "生活力偏差値"
+  },
+  {
+    "category" : "メンタル",
+    "estimatedMinutes" : 4,
+    "id" : "mental-recovery",
+    "questions" : [
+      {
+        "id" : "mental-recovery-1",
+        "scoring" : {
+          "idealMax" : 36,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 168,
+          "zeroBelow" : 0
+        },
+        "text" : "落ち込んだ日の平均回復時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "mental-recovery-2",
+        "scoring" : {
+          "idealMax" : 5,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "相談できる相手は何人？",
+        "type" : "number",
+        "unit" : "人"
+      },
+      {
+        "id" : "mental-recovery-3",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "週に何回、意識的に休みますか？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "mental-recovery-4",
+        "scoring" : {
+          "idealMax" : 90,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 90,
+          "zeroBelow" : 0
+        },
+        "text" : "寝る前に悩みを考える時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "mental-recovery-5",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 8,
+          "zeroBelow" : 0
+        },
+        "text" : "気分転換の持ちネタ数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "mental-recovery-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "小さく失敗した直後は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "誰かに刺さる言葉を言われたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "予定を詰めすぎたと気づいたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "眠れない夜は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "SNSで比べてしまったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "不安が言語化できないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "休む罪悪感があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "朝から重い日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "やることが多すぎるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "mental-recovery-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "気持ちが戻りかけたら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "回復",
+    "summary" : "落ち込みからの復帰、相談、休み方のうまさを測定。",
+    "title" : "メンタル回復偏差値"
+  },
+  {
+    "category" : "恋愛",
+    "estimatedMinutes" : 4,
+    "id" : "date-skill",
+    "questions" : [
+      {
+        "id" : "date-skill-1",
+        "scoring" : {
+          "idealMax" : 15,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 90,
+          "zeroBelow" : -20
+        },
+        "text" : "待ち合わせ何分前に着くことが多い？",
+        "type" : "number",
+        "unit" : "分前"
+      },
+      {
+        "id" : "date-skill-2",
+        "scoring" : {
+          "idealMax" : 5,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 15,
+          "zeroBelow" : 0
+        },
+        "text" : "候補のお店を何個出しますか？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "date-skill-3",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 40,
+          "zeroBelow" : 0
+        },
+        "text" : "初回デートの予算は？",
+        "type" : "number",
+        "unit" : "千円"
+      },
+      {
+        "id" : "date-skill-4",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 120,
+          "zeroBelow" : 0
+        },
+        "text" : "移動時間の余白は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "date-skill-5",
+        "scoring" : {
+          "idealMax" : 5,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "会話ネタを事前に考える数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "date-skill-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "相手の好みが曖昧なときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "沈黙が来たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "雨予報に変わったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "会計の空気になったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "次の予定を聞くタイミングは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "店が混んでいたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "相手が疲れていそうなら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "写真を撮るか迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "会話が盛り上がりすぎたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "date-skill-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "帰り際の一言は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "デート",
+    "summary" : "店選び、会話、時間管理、気遣いをゲーム判定。",
+    "title" : "デート偏差値"
+  },
+  {
+    "category" : "コミュ力",
+    "estimatedMinutes" : 4,
+    "id" : "friendship",
+    "questions" : [
+      {
+        "id" : "friendship-1",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 30,
+          "zeroBelow" : 0
+        },
+        "text" : "最近1か月で自分から誘った回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "friendship-2",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "誕生日を覚えている友人数は？",
+        "type" : "number",
+        "unit" : "人"
+      },
+      {
+        "id" : "friendship-3",
+        "scoring" : {
+          "idealMax" : 24,
+          "idealMin" : 0.5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 120,
+          "zeroBelow" : 0
+        },
+        "text" : "返信を寝かせる平均時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "friendship-4",
+        "scoring" : {
+          "idealMax" : 90,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 240,
+          "zeroBelow" : 0
+        },
+        "text" : "相談を聞く平均時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "friendship-5",
+        "scoring" : {
+          "idealMax" : 5,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 14,
+          "zeroBelow" : 0
+        },
+        "text" : "予定調整で出す候補日は？",
+        "type" : "number",
+        "unit" : "日"
+      },
+      {
+        "id" : "friendship-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "友達が落ち込んでいそうなときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "誘いが断られたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "グループ内で温度差があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "久しぶりに連絡するときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "相談が重めになったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "相手の好きなものを見つけたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "予定が合わない日が続いたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "冗談が少し滑ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "友達の成功報告を聞いたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "friendship-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "距離が近くなりすぎたと感じたら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "友達力",
+    "summary" : "誘い方、聞き上手、距離感、記憶力を測定。",
+    "title" : "友達力偏差値"
+  },
+  {
+    "category" : "センス",
+    "estimatedMinutes" : 4,
+    "id" : "fashion",
+    "questions" : [
+      {
+        "id" : "fashion-1",
+        "scoring" : {
+          "idealMax" : 40,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 150,
+          "zeroBelow" : 0
+        },
+        "text" : "月に服へ使う金額は？",
+        "type" : "number",
+        "unit" : "千円"
+      },
+      {
+        "id" : "fashion-2",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 1
+        },
+        "text" : "よく使う色は何色くらい？",
+        "type" : "number",
+        "unit" : "色"
+      },
+      {
+        "id" : "fashion-3",
+        "scoring" : {
+          "idealMax" : 6,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "靴を手入れする頻度は？",
+        "type" : "number",
+        "unit" : "回\/月"
+      },
+      {
+        "id" : "fashion-4",
+        "scoring" : {
+          "idealMax" : 4,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "出かける前に鏡を見る回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "fashion-5",
+        "scoring" : {
+          "idealMax" : 85,
+          "idealMin" : 45,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 100,
+          "zeroBelow" : 0
+        },
+        "text" : "ワードローブの稼働率は？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "fashion-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "服を選ぶ最初の基準は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "初めての場所へ行く日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "流行アイテムを見つけたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "色合わせで迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "寝坊した朝の服は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "褒められた服があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "買うか迷う服があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "写真を撮る予定の日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "雨の日の靴選びは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "fashion-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "似合うと言われた系統は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "服装",
+    "summary" : "TPO、清潔感、色合わせ、服への課金感を採点。",
+    "title" : "ファッション偏差値"
+  },
+  {
+    "category" : "生活",
+    "estimatedMinutes" : 4,
+    "id" : "clean-room",
+    "questions" : [
+      {
+        "id" : "clean-room-1",
+        "scoring" : {
+          "idealMax" : 95,
+          "idealMin" : 20,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 95,
+          "zeroBelow" : 20
+        },
+        "text" : "床が見えている割合は？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "clean-room-2",
+        "scoring" : {
+          "idealMax" : 4,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 14,
+          "zeroBelow" : 0
+        },
+        "text" : "掃除機をかける頻度は？",
+        "type" : "number",
+        "unit" : "回\/週"
+      },
+      {
+        "id" : "clean-room-3",
+        "scoring" : {
+          "idealMax" : 7,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 7,
+          "zeroBelow" : 0
+        },
+        "text" : "洗濯物の放置日数は？",
+        "type" : "number",
+        "unit" : "日"
+      },
+      {
+        "id" : "clean-room-4",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "机の上の未処理アイテム数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "clean-room-5",
+        "scoring" : {
+          "idealMax" : 120,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 120,
+          "zeroBelow" : 0
+        },
+        "text" : "急な来客に必要な片付け時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "clean-room-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "物の定位置を決めるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "片付ける気力がない日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "郵便物が溜まったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "服の収納があふれたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "掃除道具を買うときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "水回りが気になったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "捨てるか迷う物は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "模様替えしたくなったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "忙しい週の掃除は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "clean-room-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "片付け終わった直後は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "部屋",
+    "summary" : "床の可視率、掃除頻度、放置物の勢力図を測定。",
+    "title" : "部屋きれい偏差値"
+  },
+  {
+    "category" : "ネタ",
+    "estimatedMinutes" : 4,
+    "id" : "procrastination",
+    "questions" : [
+      {
+        "id" : "procrastination-1",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 60,
+          "zeroBelow" : 0
+        },
+        "text" : "締切の何日前に動き始める？",
+        "type" : "number",
+        "unit" : "日前"
+      },
+      {
+        "id" : "procrastination-2",
+        "scoring" : {
+          "idealMax" : 18,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 18,
+          "zeroBelow" : 0
+        },
+        "text" : "今ある未返信件数は？",
+        "type" : "number",
+        "unit" : "件"
+      },
+      {
+        "id" : "procrastination-3",
+        "scoring" : {
+          "idealMax" : 25,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 25,
+          "zeroBelow" : 0
+        },
+        "text" : "積みタスク数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "procrastination-4",
+        "scoring" : {
+          "idealMax" : 25,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 180,
+          "zeroBelow" : 0
+        },
+        "text" : "作業開始までの準備時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "procrastination-5",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 50,
+          "zeroBelow" : 0
+        },
+        "text" : "リマインダーを入れているタスク数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "procrastination-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "やる気が薄い作業の始め方は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "締切が遠いときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "通知が多い日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "タスクが重く見えるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "途中で飽きたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "誰かに進捗を聞かれたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "予定より遅れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "完璧にできなさそうなら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "作業環境が散らかっていたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "procrastination-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "終わった直後は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "先延ばし",
+    "summary" : "締切、未返信、積みタスクとの付き合い方を測定。",
+    "title" : "先延ばし偏差値"
+  },
+  {
+    "category" : "趣味",
+    "estimatedMinutes" : 4,
+    "id" : "oshi-life",
+    "questions" : [
+      {
+        "id" : "oshi-life-1",
+        "scoring" : {
+          "idealMax" : 50,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 250,
+          "zeroBelow" : 0
+        },
+        "text" : "月の推し活予算は？",
+        "type" : "number",
+        "unit" : "千円"
+      },
+      {
+        "id" : "oshi-life-2",
+        "scoring" : {
+          "idealMax" : 15,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 80,
+          "zeroBelow" : 0
+        },
+        "text" : "年の現場回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "oshi-life-3",
+        "scoring" : {
+          "idealMax" : 80,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 80,
+          "zeroBelow" : 0
+        },
+        "text" : "未整理グッズ数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "oshi-life-4",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 10,
+          "zeroBelow" : 0
+        },
+        "text" : "布教できる推しポイント数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "oshi-life-5",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 40,
+          "zeroBelow" : 0
+        },
+        "text" : "情報チェック頻度は？",
+        "type" : "number",
+        "unit" : "回\/日"
+      },
+      {
+        "id" : "oshi-life-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "新グッズ発表直後は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "友達に布教するときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "チケットが外れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "現場前日の準備は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "推しの炎上っぽい話題を見たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "同担と話すときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "グッズ収納を考えるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "供給が多すぎる週は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "推し変の気配を感じたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "oshi-life-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "ライブ後の余韻は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "推し活",
+    "summary" : "課金、現場、布教、グッズ管理の熱量を測定。",
+    "title" : "推し活偏差値"
+  },
+  {
+    "category" : "生活",
+    "estimatedMinutes" : 4,
+    "id" : "travel-plan",
+    "questions" : [
+      {
+        "id" : "travel-plan-1",
+        "scoring" : {
+          "idealMax" : 90,
+          "idealMin" : 7,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 365,
+          "zeroBelow" : 0
+        },
+        "text" : "出発の何日前に宿を取る？",
+        "type" : "number",
+        "unit" : "日前"
+      },
+      {
+        "id" : "travel-plan-2",
+        "scoring" : {
+          "idealMax" : 48,
+          "idealMin" : 6,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 240,
+          "zeroBelow" : 0
+        },
+        "text" : "荷造り開始は出発何時間前？",
+        "type" : "number",
+        "unit" : "時間前"
+      },
+      {
+        "id" : "travel-plan-3",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 100,
+          "zeroBelow" : 0
+        },
+        "text" : "予算の余白は何%取る？",
+        "type" : "number",
+        "unit" : "%"
+      },
+      {
+        "id" : "travel-plan-4",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 40,
+          "zeroBelow" : 0
+        },
+        "text" : "行きたい候補地はいくつ出す？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "travel-plan-5",
+        "scoring" : {
+          "idealMax" : 40,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 180,
+          "zeroBelow" : 0
+        },
+        "text" : "乗換の余白は何分？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "travel-plan-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "旅先で予定が崩れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "同行者と行きたい場所が違ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "予約サイトを見る順番は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "荷物が増えすぎたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "雨予報になったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "食事場所を決めるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "移動中に疲れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "お土産を選ぶときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "現地で迷ったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "travel-plan-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "帰宅後の写真整理は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "旅行",
+    "summary" : "予約力、予算、荷造り、トラブル対応を測定。",
+    "title" : "旅行計画偏差値"
+  },
+  {
+    "category" : "生活",
+    "estimatedMinutes" : 4,
+    "id" : "cooking",
+    "questions" : [
+      {
+        "id" : "cooking-1",
+        "scoring" : {
+          "idealMax" : 9,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 21,
+          "zeroBelow" : 0
+        },
+        "text" : "週の自炊回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "cooking-2",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "レシピなしで作れる品数は？",
+        "type" : "number",
+        "unit" : "品"
+      },
+      {
+        "id" : "cooking-3",
+        "scoring" : {
+          "idealMax" : 12,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "使い切れず捨てる食材は月に何個？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "cooking-4",
+        "scoring" : {
+          "idealMax" : 16,
+          "idealMin" : 5,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 50,
+          "zeroBelow" : 0
+        },
+        "text" : "常備している調味料数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "cooking-5",
+        "scoring" : {
+          "idealMax" : 60,
+          "idealMin" : 15,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 180,
+          "zeroBelow" : 0
+        },
+        "text" : "料理にかける平均時間は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "cooking-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "冷蔵庫に半端な食材があるときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "味が薄かったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "レシピにない材料が必要なら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "先に枠だけ決める"
+          },
+          {
+            "id" : "b",
+            "point" : 1,
+            "text" : "買ってから調整する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "一晩置いて考える"
+          },
+          {
+            "id" : "d",
+            "point" : 2,
+            "text" : "安い方へ寄せる"
+          }
+        ],
+        "text" : "疲れている日の夕食は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "人に食べてもらう日は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "買い出し前の動きは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "作りすぎたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "新しい料理を試すときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "洗い物が増えたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "cooking-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "全体のまとまりを優先する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "目立つ一点を入れる"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "無難さを優先する"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その日の気分で決める"
+          }
+        ],
+        "text" : "盛り付けで迷ったら？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "料理",
+    "summary" : "自炊頻度、作れる品数、冷蔵庫管理、味付け感覚を測定。",
+    "title" : "料理偏差値"
+  },
+  {
+    "category" : "趣味",
+    "estimatedMinutes" : 4,
+    "id" : "karaoke",
+    "questions" : [
+      {
+        "id" : "karaoke-1",
+        "scoring" : {
+          "idealMax" : 60,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 60,
+          "zeroBelow" : 0
+        },
+        "text" : "歌える曲数は？",
+        "type" : "number",
+        "unit" : "曲"
+      },
+      {
+        "id" : "karaoke-2",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "higherIsBetter",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "キー調整できる曲数は？",
+        "type" : "number",
+        "unit" : "曲"
+      },
+      {
+        "id" : "karaoke-3",
+        "scoring" : {
+          "idealMax" : 96,
+          "idealMin" : 82,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 100,
+          "zeroBelow" : 40
+        },
+        "text" : "十八番の平均点は？",
+        "type" : "number",
+        "unit" : "点"
+      },
+      {
+        "id" : "karaoke-4",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 3,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "場を見て選べる曲ジャンル数は？",
+        "type" : "number",
+        "unit" : "種"
+      },
+      {
+        "id" : "karaoke-5",
+        "scoring" : {
+          "idealMax" : 4,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "マイクを持つまでの平均待ち曲数は？",
+        "type" : "number",
+        "unit" : "曲"
+      },
+      {
+        "id" : "karaoke-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "一曲目を任されたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "知らない曲が続いたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "盛り上がりが落ちたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "誰かがバラードを入れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "デュエットに誘われたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "高音がきつい曲を入れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "採点モードの空気になったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "順番がなかなか来ないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "最後の一曲を選ぶなら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "karaoke-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "歌い終わった人への反応は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "カラオケ",
+    "summary" : "レパートリー、選曲空気読み、盛り上げ力を測定。",
+    "title" : "カラオケ偏差値"
+  },
+  {
+    "category" : "ネタ",
+    "estimatedMinutes" : 4,
+    "id" : "crisis-avoidance",
+    "questions" : [
+      {
+        "id" : "crisis-avoidance-1",
+        "scoring" : {
+          "idealMax" : 10,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 10,
+          "zeroBelow" : 0
+        },
+        "text" : "月の忘れ物回数は？",
+        "type" : "number",
+        "unit" : "回"
+      },
+      {
+        "id" : "crisis-avoidance-2",
+        "scoring" : {
+          "idealMax" : 6,
+          "idealMin" : 2,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "アラーム設定数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "crisis-avoidance-3",
+        "scoring" : {
+          "idealMax" : 90,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 90,
+          "zeroBelow" : 0
+        },
+        "text" : "財布や鍵を探す時間は週に何分？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "crisis-avoidance-4",
+        "scoring" : {
+          "idealMax" : 35,
+          "idealMin" : 10,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 180,
+          "zeroBelow" : -20
+        },
+        "text" : "予定前の移動余白は？",
+        "type" : "number",
+        "unit" : "分"
+      },
+      {
+        "id" : "crisis-avoidance-5",
+        "scoring" : {
+          "idealMax" : 4,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 12,
+          "zeroBelow" : 0
+        },
+        "text" : "予備の充電手段はいくつ？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "crisis-avoidance-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "出発前に違和感があったら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "寝坊しかけた朝は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "電車が遅れたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "財布が見当たらないときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "スマホ残量が少ない外出中は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "忘れ物に途中で気づいたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "小分けにして進める"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "締切が近いほど集中する"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "誰かを巻き込む"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "気分が乗るまで待つ"
+          }
+        ],
+        "text" : "予定が重なっていたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "雨具を迷う天気なら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "知らない場所へ行くときは？",
+        "type" : "choice"
+      },
+      {
+        "id" : "crisis-avoidance-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "トラブル後の共有は？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "危機回避",
+    "summary" : "忘れ物、寝坊、財布紛失、予定管理の守備力を測定。",
+    "title" : "危機回避偏差値"
+  },
+  {
+    "category" : "ネタ",
+    "estimatedMinutes" : 4,
+    "id" : "black-history",
+    "questions" : [
+      {
+        "id" : "black-history-1",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 300,
+          "zeroBelow" : 0
+        },
+        "text" : "消したい過去投稿はいくつ？",
+        "type" : "number",
+        "unit" : "件"
+      },
+      {
+        "id" : "black-history-2",
+        "scoring" : {
+          "idealMax" : 20,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "lowerIsBetter",
+          "zeroAbove" : 20,
+          "zeroBelow" : 0
+        },
+        "text" : "過去の失言を思い出す頻度は？",
+        "type" : "number",
+        "unit" : "回\/週"
+      },
+      {
+        "id" : "black-history-3",
+        "scoring" : {
+          "idealMax" : 8,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 40,
+          "zeroBelow" : 0
+        },
+        "text" : "笑い話にできる過去ネタ数は？",
+        "type" : "number",
+        "unit" : "個"
+      },
+      {
+        "id" : "black-history-4",
+        "scoring" : {
+          "idealMax" : 3,
+          "idealMin" : 0,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 30,
+          "zeroBelow" : 0
+        },
+        "text" : "SNSの過去ログ確認頻度は？",
+        "type" : "number",
+        "unit" : "回\/月"
+      },
+      {
+        "id" : "black-history-5",
+        "scoring" : {
+          "idealMax" : 48,
+          "idealMin" : 1,
+          "maxPoint" : 4,
+          "mode" : "range",
+          "zeroAbove" : 240,
+          "zeroBelow" : 0
+        },
+        "text" : "気まずさの回復にかかる時間は？",
+        "type" : "number",
+        "unit" : "時間"
+      },
+      {
+        "id" : "black-history-6",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "昔の投稿を見つけたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-7",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "軽くいじられたら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-8",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "思い出して眠れない夜は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-9",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "候補を3つに絞る"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "直感で早めに決める"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "詳しい人に聞く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "その場のノリに任せる"
+          }
+        ],
+        "text" : "自虐ネタを使うなら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-10",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "同じ失敗をしそうな場面では？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-11",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "相手の温度を拾う"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "自分から空気を作る"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "聞き役に回る"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "流れが来るまで待つ"
+          }
+        ],
+        "text" : "誰かの黒歴史を見たら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-12",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "消すか残すか迷う投稿は？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-13",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "まず状況を整理する"
+          },
+          {
+            "id" : "b",
+            "point" : 3,
+            "text" : "軽い一言で流れを戻す"
+          },
+          {
+            "id" : "c",
+            "point" : 2,
+            "text" : "少し時間を置く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "別の話題で上書きする"
+          }
+        ],
+        "text" : "気まずい相手と再会したら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-14",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "近すぎない距離を保つ"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "熱量があるうちに寄せる"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手の出方に合わせる"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "自分のペースを優先する"
+          }
+        ],
+        "text" : "過去の自分を評価するなら？",
+        "type" : "choice"
+      },
+      {
+        "id" : "black-history-15",
+        "options" : [
+          {
+            "id" : "a",
+            "point" : 4,
+            "text" : "早めに小さく動く"
+          },
+          {
+            "id" : "b",
+            "point" : 2,
+            "text" : "一度寝かせてから動く"
+          },
+          {
+            "id" : "c",
+            "point" : 3,
+            "text" : "相手や場の反応を見て動く"
+          },
+          {
+            "id" : "d",
+            "point" : 1,
+            "text" : "最後にまとめて片づける"
+          }
+        ],
+        "text" : "笑い話に変えるタイミングは？",
+        "type" : "choice"
+      }
+    ],
+    "shortTitle" : "黒歴史",
+    "summary" : "過去投稿、失言リカバリー、自虐の扱いを測定。",
+    "title" : "黒歴史耐性偏差値"
+  }
+]
