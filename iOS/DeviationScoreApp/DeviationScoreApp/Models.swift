@@ -7,6 +7,11 @@ enum DiagnosisCategory: String, CaseIterable, Codable, Identifiable {
     case social = "コミュ力"
     case career = "仕事"
     case jobHunt = "就活"
+    case money = "お金"
+    case life = "生活"
+    case mental = "メンタル"
+    case style = "センス"
+    case hobby = "趣味"
     case fun = "ネタ"
 
     var id: String { rawValue }
@@ -23,6 +28,16 @@ enum DiagnosisCategory: String, CaseIterable, Codable, Identifiable {
             return "briefcase"
         case .jobHunt:
             return "graduationcap"
+        case .money:
+            return "creditcard"
+        case .life:
+            return "house"
+        case .mental:
+            return "leaf"
+        case .style:
+            return "tshirt"
+        case .hobby:
+            return "star"
         case .fun:
             return "flame"
         }
@@ -40,6 +55,16 @@ enum DiagnosisCategory: String, CaseIterable, Codable, Identifiable {
             return Color(red: 0.08, green: 0.54, blue: 0.30)
         case .jobHunt:
             return Color(red: 0.94, green: 0.48, blue: 0.12)
+        case .money:
+            return Color(red: 0.10, green: 0.62, blue: 0.40)
+        case .life:
+            return Color(red: 0.14, green: 0.54, blue: 0.90)
+        case .mental:
+            return Color(red: 0.36, green: 0.64, blue: 0.22)
+        case .style:
+            return Color(red: 0.90, green: 0.32, blue: 0.68)
+        case .hobby:
+            return Color(red: 0.86, green: 0.62, blue: 0.06)
         case .fun:
             return Color(red: 0.72, green: 0.20, blue: 0.86)
         }
@@ -57,6 +82,16 @@ enum DiagnosisCategory: String, CaseIterable, Codable, Identifiable {
             return Color(red: 0.88, green: 0.97, blue: 0.91)
         case .jobHunt:
             return Color(red: 1.00, green: 0.94, blue: 0.86)
+        case .money:
+            return Color(red: 0.88, green: 0.98, blue: 0.92)
+        case .life:
+            return Color(red: 0.88, green: 0.95, blue: 1.00)
+        case .mental:
+            return Color(red: 0.92, green: 0.98, blue: 0.88)
+        case .style:
+            return Color(red: 1.00, green: 0.91, blue: 0.97)
+        case .hobby:
+            return Color(red: 1.00, green: 0.96, blue: 0.84)
         case .fun:
             return Color(red: 0.98, green: 0.90, blue: 1.00)
         }
