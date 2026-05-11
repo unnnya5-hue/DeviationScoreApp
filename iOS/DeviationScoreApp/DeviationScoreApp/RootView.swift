@@ -37,6 +37,17 @@ struct RootView: View {
 
 private struct HomeView: View {
     private let featured = DiagnosisCatalog.diagnoses[0]
+    private var questionRangeText: String {
+        let counts = DiagnosisCatalog.diagnoses.map(\.questions.count)
+        let minimum = counts.min() ?? 0
+        let maximum = counts.max() ?? minimum
+
+        if minimum == maximum {
+            return "各\(minimum)問"
+        }
+
+        return "\(minimum)〜\(maximum)問"
+    }
 
     var body: some View {
         ScrollView {
@@ -60,7 +71,7 @@ private struct HomeView: View {
 
                 HStack(spacing: 8) {
                     GameBadge(text: "\(DiagnosisCatalog.diagnoses.count)診断", color: .pink)
-                    GameBadge(text: "各15問", color: .teal)
+                    GameBadge(text: questionRangeText, color: .teal)
                     GameBadge(text: "数字入力あり", color: .purple)
                 }
 
