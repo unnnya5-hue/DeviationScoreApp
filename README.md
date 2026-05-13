@@ -5,6 +5,9 @@
 ## ドキュメント
 
 - [要件定義書](docs/requirements.md)
+- [App Store掲載情報ドラフト](docs/app-store-metadata.md)
+- [プライバシーポリシー文案](docs/privacy-policy.md)
+- [公開準備チェックリスト](docs/release-checklist.md)
 
 ## 初期方針
 
