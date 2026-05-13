@@ -57,13 +57,13 @@ private struct HomeView: View {
                         Image(systemName: "sparkles")
                             .font(.title.bold())
                             .foregroundStyle(.yellow)
-                        Text("偏差値メーカー")
+                        Text("偏差値あそび")
                             .font(.largeTitle.bold())
                     }
 
-                    Text("いろんな自分を、だいたい偏差値で遊ぶ。")
+                    Text("気になるテーマを選んで、あなたの偏差値をゆるく診断。")
                         .font(.title3.bold())
-                    Text("結果はエンタメ用の簡易診断です。スクショ映えする一発ネタとして楽しめます。")
+                    Text("結果はエンタメ目的の簡易スコアです。友だちとの話題やSNSのネタとして楽しめます。")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
