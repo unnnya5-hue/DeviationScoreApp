@@ -73,6 +73,8 @@ struct ResultView: View {
                         .padding()
                 }
                 .buttonStyle(.bordered)
+
+                AdBannerSlot(placement: "result-bottom")
             }
             .padding()
         }

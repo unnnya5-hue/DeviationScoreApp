@@ -131,6 +131,8 @@ private struct DiagnosisListView: View {
                         }
                     }
                 }
+
+                AdBannerSlot(placement: "diagnosis-list-bottom")
             }
             .padding()
         }

@@ -8,11 +8,13 @@
 - [App Store掲載情報ドラフト](docs/app-store-metadata.md)
 - [プライバシーポリシー文案](docs/privacy-policy.md)
 - [公開準備チェックリスト](docs/release-checklist.md)
+- [AdMob設定メモ](docs/admob-setup.md)
 
 ## 初期方針
 
 - iOS / SwiftUI で実装
-- MVPではログイン、ランキング、広告、課金は後回し
+- MVPではログイン、ランキング、課金は後回し
+- 広告はAdMobのテスト広告IDで先行実装
 - 診断データはアプリ内の静的データから開始
 - 診断履歴は端末内保存から開始
 
