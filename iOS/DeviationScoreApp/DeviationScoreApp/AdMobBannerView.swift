@@ -4,6 +4,15 @@ import SwiftUI
 enum AdMobConfiguration {
     static let isUsingTestAds = true
     static let bannerAdUnitID = "ca-app-pub-3940256099942544/2435281174"
+
+    private static var didStartSDK = false
+
+    static func startSDKIfNeeded() {
+        guard !didStartSDK else { return }
+
+        didStartSDK = true
+        MobileAds.shared.start()
+    }
 }
 
 struct AdBannerSlot: View {
@@ -89,6 +98,8 @@ private struct BannerViewContainer: UIViewRepresentable {
     let adUnitID: String
 
     func makeUIView(context: Context) -> BannerView {
+        AdMobConfiguration.startSDKIfNeeded()
+
         let banner = BannerView(adSize: adSize)
         banner.adUnitID = adUnitID
         banner.delegate = context.coordinator

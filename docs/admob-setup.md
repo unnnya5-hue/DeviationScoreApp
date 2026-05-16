@@ -11,6 +11,8 @@ Google Mobile Ads SDKをSwift Package Manager経由で追加し、以下の画�
 
 現在はGoogle公式のテスト広告IDを使用しています。AdMob審査中でも、この状態で実装確認できます。
 
+起動直後の白画面を避けるため、SDK初期化はアプリ起動時ではなく、広告バナーが初めて表示されるタイミングで行います。また、Google Mobile Ads SDKの公式手順に合わせて `Other Linker Flags` に `-ObjC` を設定しています。
+
 ## 本番IDへ差し替える場所
 
 AdMobの審査が完了し、iOSアプリと広告ユニットを作成したら、以下を差し替えます。
