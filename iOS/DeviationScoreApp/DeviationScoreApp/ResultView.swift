@@ -2,6 +2,9 @@ import SwiftUI
 
 struct ResultView: View {
     let result: DiagnosisResult
+    var closeButtonTitle = "別の診断へ"
+    var closeButtonIcon = "arrow.uturn.left"
+    var hidesBackButton = true
     let closeAction: () -> Void
 
     var body: some View {
@@ -68,7 +71,7 @@ struct ResultView: View {
                 Button {
                     closeAction()
                 } label: {
-                    Label("別の診断へ", systemImage: "arrow.uturn.left")
+                    Label(closeButtonTitle, systemImage: closeButtonIcon)
                         .frame(maxWidth: .infinity)
                         .padding()
                 }
@@ -79,7 +82,7 @@ struct ResultView: View {
             .padding()
         }
         .navigationTitle("結果")
-        .navigationBarBackButtonHidden()
+        .navigationBarBackButtonHidden(hidesBackButton)
         .appBackground()
     }
 }

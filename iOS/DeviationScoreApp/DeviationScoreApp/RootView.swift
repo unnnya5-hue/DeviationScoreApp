@@ -82,6 +82,8 @@ private struct HomeView: View {
                 }
                 .buttonStyle(.plain)
 
+                AdBannerSlot(placement: "home-featured")
+
                 VStack(alignment: .leading, spacing: 10) {
                     Text("ゲームモード")
                         .font(.title3.bold())
@@ -154,24 +156,32 @@ private struct HistoryView: View {
                 )
             } else {
                 ForEach(historyStore.results) { result in
-                    VStack(alignment: .leading, spacing: 6) {
-                        HStack {
-                            Text(result.diagnosisTitle)
-                                .font(.headline)
-                            Spacer()
-                            Text("偏差値\(result.deviationScore)")
-                                .font(.headline)
-                                .foregroundStyle(result.category.accentColor)
+                    NavigationLink {
+                        HistoryResultDetailView(result: result)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 6) {
+                            HStack {
+                                Text(result.diagnosisTitle)
+                                    .font(.headline)
+                                Spacer()
+                                Text("偏差値\(result.deviationScore)")
+                                    .font(.headline)
+                                    .foregroundStyle(result.category.accentColor)
+                            }
+                            Text(result.rankTitle)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                            Text(result.measuredAt, format: .dateTime.month().day().hour().minute())
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
                         }
-                        Text(result.rankTitle)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                        Text(result.measuredAt, style: .date)
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
+                        .padding(.vertical, 4)
                     }
-                    .padding(.vertical, 4)
                 }
+
+                AdBannerSlot(placement: "history-bottom")
+                    .listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
+                    .listRowBackground(Color.clear)
             }
         }
         .navigationTitle("診断履歴")
@@ -181,6 +191,22 @@ private struct HistoryView: View {
                     historyStore.clear()
                 }
             }
+        }
+    }
+}
+
+private struct HistoryResultDetailView: View {
+    @Environment(\.dismiss) private var dismiss
+    let result: DiagnosisResult
+
+    var body: some View {
+        ResultView(
+            result: result,
+            closeButtonTitle: "履歴へ戻る",
+            closeButtonIcon: "chevron.left",
+            hidesBackButton: false
+        ) {
+            dismiss()
         }
     }
 }
@@ -197,6 +223,12 @@ private struct SettingsView: View {
             Section("注意") {
                 Text("表示される偏差値は、医療・心理・学力・結婚可能性などを正確に評価するものではありません。")
                     .foregroundStyle(.secondary)
+            }
+
+            Section {
+                AdBannerSlot(placement: "settings-bottom")
+                    .listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
+                    .listRowBackground(Color.clear)
             }
         }
         .navigationTitle("設定")

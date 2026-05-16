@@ -4,10 +4,13 @@
 
 ## 現在の状態
 
-Google Mobile Ads SDKをSwift Package Manager経由で追加し、以下の画面にバナー広告枠を実装しています。
+Google Mobile Ads SDKをSwift Package Manager経由で追加し、以下の画面に広告枠を実装しています。
 
+- トップ画面の注目診断下
 - 診断一覧画面の下部
 - 結果画面の下部
+- 履歴画面の下部
+- 設定画面の下部
 - アプリ起動時のApp Open広告
 - 診断完了時のインタースティシャル広告
 
