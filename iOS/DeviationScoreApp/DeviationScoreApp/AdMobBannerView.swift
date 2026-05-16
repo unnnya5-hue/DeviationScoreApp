@@ -7,8 +7,16 @@ enum AdMobConfiguration {
 
     private static var didStartSDK = false
 
+    static var hasApplicationID: Bool {
+        guard let appID = Bundle.main.object(forInfoDictionaryKey: "GADApplicationIdentifier") as? String else {
+            return false
+        }
+
+        return !appID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
     static func startSDKIfNeeded() {
-        guard !didStartSDK else { return }
+        guard hasApplicationID, !didStartSDK else { return }
 
         didStartSDK = true
         MobileAds.shared.start()
@@ -50,6 +58,8 @@ struct AdBannerSlot: View {
 
             if isRunningForPreview {
                 previewBanner
+            } else if !AdMobConfiguration.hasApplicationID {
+                missingConfigurationBanner
             } else if availableWidth > 0 {
                 banner(for: availableWidth)
             }
@@ -72,6 +82,19 @@ struct AdBannerSlot: View {
                 Text("AdMob Banner")
                     .font(.caption.bold())
                     .foregroundStyle(.secondary)
+            }
+    }
+
+    private var missingConfigurationBanner: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(Color.gray.opacity(0.12))
+            .frame(height: 56)
+            .overlay {
+                #if DEBUG
+                Text("AdMob App ID is missing")
+                    .font(.caption.bold())
+                    .foregroundStyle(.secondary)
+                #endif
             }
     }
 

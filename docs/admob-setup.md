@@ -19,7 +19,7 @@ AdMobの審査が完了し、iOSアプリと広告ユニットを作成したら
 
 ### AdMobアプリID
 
-Xcodeプロジェクト設定の `GADApplicationIdentifier` を、自分のAdMobアプリIDへ変更します。
+`iOS/DeviationScoreApp/DeviationScoreApp/Info.plist` の `GADApplicationIdentifier` を、自分のAdMobアプリIDへ変更します。
 
 現在の値:
 
