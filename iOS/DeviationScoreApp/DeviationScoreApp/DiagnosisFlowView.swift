@@ -120,6 +120,7 @@ struct DiagnosisFlowView: View {
         .onAppear {
             loadNumberDraft()
             startTimerIfNeeded()
+            InterstitialAdManager.shared.prepareAd()
         }
         .onChange(of: currentIndex) { _, _ in
             loadNumberDraft()
@@ -279,6 +280,7 @@ struct DiagnosisFlowView: View {
             )
             historyStore.save(madeResult)
             result = madeResult
+            InterstitialAdManager.shared.showAfterDiagnosisCompletion()
         }
     }
 

@@ -8,6 +8,8 @@ Google Mobile Ads SDKをSwift Package Manager経由で追加し、以下の画�
 
 - 診断一覧画面の下部
 - 結果画面の下部
+- アプリ起動時のApp Open広告
+- 診断完了時のインタースティシャル広告
 
 現在はGoogle公式のテスト広告IDを使用しています。AdMob審査中でも、この状態で実装確認できます。
 
@@ -47,6 +49,26 @@ ca-app-pub-3940256099942544/2435281174
 
 ```text
 ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy
+```
+
+### App Open広告ユニットID
+
+`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `appOpenAdUnitID` を、自分のApp Open広告ユニットIDへ変更します。
+
+現在の値:
+
+```text
+ca-app-pub-3940256099942544/5575463023
+```
+
+### インタースティシャル広告ユニットID
+
+`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `interstitialAdUnitID` を、自分のインタースティシャル広告ユニットIDへ変更します。
+
+現在の値:
+
+```text
+ca-app-pub-3940256099942544/4411468910
 ```
 
 ## 注意点

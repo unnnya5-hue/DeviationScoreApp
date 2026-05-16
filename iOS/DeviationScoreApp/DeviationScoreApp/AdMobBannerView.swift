@@ -4,8 +4,12 @@ import SwiftUI
 enum AdMobConfiguration {
     static let isUsingTestAds = true
     static let bannerAdUnitID = "ca-app-pub-3940256099942544/2435281174"
+    static let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
+    static let interstitialAdUnitID = "ca-app-pub-3940256099942544/4411468910"
 
     private static var didStartSDK = false
+    private static var isPresentingFullScreenAd = false
+    private static var lastFullScreenAdDismissedAt: Date?
 
     static var hasApplicationID: Bool {
         guard let appID = Bundle.main.object(forInfoDictionaryKey: "GADApplicationIdentifier") as? String else {
@@ -20,6 +24,25 @@ enum AdMobConfiguration {
 
         didStartSDK = true
         MobileAds.shared.start()
+    }
+
+    static func canPresentFullScreenAd(cooldown: TimeInterval) -> Bool {
+        guard !isPresentingFullScreenAd else { return false }
+
+        if let lastFullScreenAdDismissedAt {
+            return Date().timeIntervalSince(lastFullScreenAdDismissedAt) >= cooldown
+        }
+
+        return true
+    }
+
+    static func markFullScreenAdPresented() {
+        isPresentingFullScreenAd = true
+    }
+
+    static func markFullScreenAdFinished() {
+        isPresentingFullScreenAd = false
+        lastFullScreenAdDismissedAt = Date()
     }
 }
 
