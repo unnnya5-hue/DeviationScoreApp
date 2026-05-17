@@ -14,6 +14,7 @@
 - [x] AdMobバナー広告をテスト広告IDで実装
 - [x] AdMob App Open広告をテスト広告IDで実装
 - [x] AdMobインタースティシャル広告をテスト広告IDで実装
+- [x] AdMob本番IDへ差し替え
 
 ## App Store Connectで行うこと
 
@@ -34,7 +35,8 @@
 
 - [ ] XcodeでReleaseビルドが通ることを確認
 - [ ] 実機またはシミュレーターで主要導線を確認
-- [ ] 本番AdMob IDへ差し替えた状態で白画面・クラッシュがないことを確認
+- [x] 本番AdMob IDへ差し替えた状態でビルドが通ることを確認
+- [ ] 本番AdMob IDへ差し替えた状態で白画面・クラッシュがないことを実機確認
 - [ ] XcodeでArchiveを作成
 - [ ] App Store Connectへアップロード
 - [ ] TestFlightのテスト情報を入力
@@ -56,13 +58,13 @@
 ## 広告を入れる場合
 
 - [x] Google AdMobアカウントを作成
-- [ ] AdMobにiOSアプリを登録
-- [ ] バナー広告ユニットを作成
-- [ ] App Open広告ユニットを作成
-- [ ] インタースティシャル広告ユニットを作成
+- [x] AdMobにiOSアプリを登録
+- [x] バナー広告ユニットを作成
+- [x] App Open広告ユニットを作成
+- [x] インタースティシャル広告ユニットを作成
 - [x] Google Mobile Ads SDKを追加
 - [x] テスト広告IDで実装・検証
-- [ ] 本番広告IDへ差し替え
+- [x] 本番広告IDへ差し替え
 - [ ] App Store ConnectのAppプライバシー回答を更新
 - [x] プライバシーポリシーを広告対応版に更新
 - [ ] 必要に応じてApp Tracking Transparencyの説明文と許可ダイアログを実装

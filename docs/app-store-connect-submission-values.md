@@ -9,10 +9,6 @@
 - サポートURL
 - プライバシーポリシーURL
 - 問い合わせメールアドレス
-- AdMobアプリID
-- バナー広告ユニットID
-- App Open広告ユニットID
-- インタースティシャル広告ユニットID
 
 ## 新規アプリ作成
 
@@ -167,13 +163,13 @@ iPhone専用で提出するため、まずはiPhoneのスクリーンショッ�
 5. 結果画面
 6. 履歴画面
 
-## AdMob本番ID 差し替え依頼フォーマット
+## AdMob本番ID
 
-以下の4つを送ってもらえれば、コードとドキュメントを本番IDへ差し替えます。
+以下の4つはコードとドキュメントへ反映済みです。
 
 ```text
-AdMobアプリID: ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy
-バナー広告ユニットID: ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy
-App Open広告ユニットID: ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy
-インタースティシャル広告ユニットID: ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy
+AdMobアプリID: ca-app-pub-6961277874965643~9419414388
+バナー広告ユニットID: ca-app-pub-6961277874965643/3783944323
+App Open広告ユニットID: ca-app-pub-6961277874965643/4022634932
+インタースティシャル広告ユニットID: ca-app-pub-6961277874965643/2453568249
 ```

@@ -1,6 +1,6 @@
 # AdMob設定メモ
 
-最終更新日: 2026-05-14
+最終更新日: 2026-05-17
 
 ## 現在の状態
 
@@ -14,70 +14,51 @@ Google Mobile Ads SDKをSwift Package Manager経由で追加し、以下の画�
 - アプリ起動時のApp Open広告
 - 診断完了時のインタースティシャル広告
 
-現在はGoogle公式のテスト広告IDを使用しています。AdMob審査中でも、この状態で実装確認できます。
+現在は本番のAdMobアプリIDと広告ユニットIDを使用しています。
 
 起動直後の白画面を避けるため、SDK初期化はアプリ起動時ではなく、広告バナーが初めて表示されるタイミングで行います。また、Google Mobile Ads SDKの公式手順に合わせて `Other Linker Flags` に `-ObjC` を設定しています。
 
-## 本番IDへ差し替える場所
+## 現在の本番ID
 
-AdMobの審査が完了し、iOSアプリと広告ユニットを作成したら、以下を差し替えます。
+審査提出前に以下へ差し替え済みです。
 
 ### AdMobアプリID
 
-`iOS/DeviationScoreApp/DeviationScoreApp/Info.plist` の `GADApplicationIdentifier` を、自分のAdMobアプリIDへ変更します。
-
-現在の値:
+`iOS/DeviationScoreApp/DeviationScoreApp/Info.plist` の `GADApplicationIdentifier`:
 
 ```text
-ca-app-pub-3940256099942544~1458002511
-```
-
-差し替え後の形式:
-
-```text
-ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy
+ca-app-pub-6961277874965643~9419414388
 ```
 
 ### バナー広告ユニットID
 
-`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `bannerAdUnitID` を、自分のバナー広告ユニットIDへ変更します。
-
-現在の値:
+`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `bannerAdUnitID`:
 
 ```text
-ca-app-pub-3940256099942544/2435281174
-```
-
-差し替え後の形式:
-
-```text
-ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy
+ca-app-pub-6961277874965643/3783944323
 ```
 
 ### App Open広告ユニットID
 
-`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `appOpenAdUnitID` を、自分のApp Open広告ユニットIDへ変更します。
-
-現在の値:
+`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `appOpenAdUnitID`:
 
 ```text
-ca-app-pub-3940256099942544/5575463023
+ca-app-pub-6961277874965643/4022634932
 ```
 
 ### インタースティシャル広告ユニットID
 
-`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `interstitialAdUnitID` を、自分のインタースティシャル広告ユニットIDへ変更します。
-
-現在の値:
+`iOS/DeviationScoreApp/DeviationScoreApp/AdMobBannerView.swift` の `interstitialAdUnitID`:
 
 ```text
-ca-app-pub-3940256099942544/4411468910
+ca-app-pub-6961277874965643/2453568249
 ```
 
 ## 注意点
 
-- 開発中は必ずテスト広告IDを使います。
+- 本番IDへ差し替え済みのため、審査前は実機で広告読み込み失敗時もクラッシュしないことを確認します。
 - 自分の本番広告をクリックしないでください。
-- 本番IDへ差し替えたら、App Store ConnectのAppプライバシー回答を広告ありの内容に更新します。
+- テスト確認で広告を頻繁に触る場合は、一時的にGoogle公式のテスト広告IDへ戻します。
+- App Store ConnectのAppプライバシー回答は広告ありの内容に更新します。
 - パーソナライズ広告やIDFAを使う場合は、App Tracking Transparency対応が必要になる可能性があります。
 - 公開後は、開発者Webサイトに `app-ads.txt` を設置すると広告収益の保護に役立ちます。

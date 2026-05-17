@@ -2,10 +2,10 @@ import GoogleMobileAds
 import SwiftUI
 
 enum AdMobConfiguration {
-    static let isUsingTestAds = true
-    static let bannerAdUnitID = "ca-app-pub-3940256099942544/2435281174"
-    static let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
-    static let interstitialAdUnitID = "ca-app-pub-3940256099942544/4411468910"
+    static let isUsingTestAds = false
+    static let bannerAdUnitID = "ca-app-pub-6961277874965643/3783944323"
+    static let appOpenAdUnitID = "ca-app-pub-6961277874965643/4022634932"
+    static let interstitialAdUnitID = "ca-app-pub-6961277874965643/2453568249"
 
     private static var didStartSDK = false
     private static var isPresentingFullScreenAd = false
