@@ -109,3 +109,11 @@ AdMobにより申告が必要になる可能性が高いもの:
 - スクリーンショット: https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots/
 - App Review Guidelines: https://developer.apple.com/app-store/review/guidelines/
 - AdMobのApp Storeデータ開示: https://developers.google.com/admob/ios/privacy/data-disclosure
+
+## 詳細ドキュメント
+
+- サポートURL・プライバシーポリシーURL準備: `docs/support-privacy-url-preparation.md`
+- Appプライバシー回答案: `docs/app-privacy-answers.md`
+- 年齢レーティング回答案: `docs/age-rating-answers.md`
+- スクリーンショット準備: `docs/screenshot-preparation.md`
+- Archiveとアップロード手順: `docs/archive-upload-guide.md`
