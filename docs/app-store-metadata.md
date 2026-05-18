@@ -48,6 +48,6 @@
 
 ## サポート情報
 
-- サポートURL: `[公開前に入力]`
-- プライバシーポリシーURL: `[公開前に入力]`
+- サポートURL: `https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html`
+- プライバシーポリシーURL: `https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html`
 - フィードバックメール: `[公開前に入力]`

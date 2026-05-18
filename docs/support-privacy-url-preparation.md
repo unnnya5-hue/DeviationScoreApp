@@ -45,9 +45,9 @@ GitHub Pagesでは、リポジトリの `main` ブランチにある `/docs` フ
 GitHub Pagesで `/docs` を公開元にした場合の例:
 
 ```text
-トップURL: https://<ユーザー名>.github.io/<リポジトリ名>/
-サポートURL: https://<ユーザー名>.github.io/<リポジトリ名>/public/support.html
-プライバシーポリシーURL: https://<ユーザー名>.github.io/<リポジトリ名>/public/privacy.html
+トップURL: https://unnnya5-hue.github.io/DeviationScoreApp/
+サポートURL: https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html
+プライバシーポリシーURL: https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html
 ```
 
 独自ドメインで公開する場合の例:

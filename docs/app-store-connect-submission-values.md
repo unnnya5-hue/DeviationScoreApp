@@ -67,13 +67,19 @@
 ### サポートURL
 
 ```text
-[用意したURLを入力]
+https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html
+```
+
+### プライバシーポリシーURL
+
+```text
+https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html
 ```
 
 ### マーケティングURL
 
 ```text
-[任意。未入力でも可]
+https://unnnya5-hue.github.io/DeviationScoreApp/
 ```
 
 ### コピーライト
