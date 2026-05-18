@@ -57,7 +57,7 @@ private struct HomeView: View {
                         Image(systemName: "sparkles")
                             .font(.title.bold())
                             .foregroundStyle(.yellow)
-                        Text("偏差値あそび")
+                        Text("いろいろ偏差値診断")
                             .font(.largeTitle.bold())
                     }
 

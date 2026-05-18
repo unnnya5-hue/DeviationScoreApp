@@ -234,7 +234,7 @@ struct DiagnosisResult: Identifiable, Codable, Hashable {
         return """
         \(diagnosisTitle)の結果は偏差値\(deviationScore)「\(rankTitle)」でした。\(timeText)
         \(comment)
-        #偏差値あそび
+        #いろいろ偏差値診断
         """
     }
 
