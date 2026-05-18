@@ -96,7 +96,7 @@ https://unnnya5-hue.github.io/DeviationScoreApp/
 名: [入力]
 姓: [入力]
 電話番号: [入力]
-メールアドレス: [入力]
+メールアドレス: deviationscoreappsupport@gmail.com
 ```
 
 ### サインイン情報

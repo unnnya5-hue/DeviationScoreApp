@@ -50,4 +50,4 @@
 
 - サポートURL: `https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html`
 - プライバシーポリシーURL: `https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html`
-- フィードバックメール: `[公開前に入力]`
+- フィードバックメール: `deviationscoreappsupport@gmail.com`

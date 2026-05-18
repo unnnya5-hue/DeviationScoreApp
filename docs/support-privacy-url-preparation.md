@@ -19,7 +19,7 @@ GitHub Pagesでは、リポジトリの `main` ブランチにある `/docs` フ
 以下のプレースホルダーを実値に置き換えます。
 
 ```text
-[問い合わせメールアドレスを入力]
+deviationscoreappsupport@gmail.com
 ```
 
 置き換え対象:

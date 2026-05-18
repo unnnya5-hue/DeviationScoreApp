@@ -40,4 +40,4 @@
 
 本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。
 
-`[サポートメールアドレスを入力]`
+`deviationscoreappsupport@gmail.com`
