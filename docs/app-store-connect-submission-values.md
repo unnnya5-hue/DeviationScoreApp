@@ -67,13 +67,13 @@
 ### サポートURL
 
 ```text
-https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html
+https://unnnya5-hue.github.io/DeviationScoreApp/support.html
 ```
 
 ### プライバシーポリシーURL
 
 ```text
-https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html
+https://unnnya5-hue.github.io/DeviationScoreApp/privacy.html
 ```
 
 ### マーケティングURL

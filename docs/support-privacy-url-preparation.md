@@ -7,8 +7,8 @@
 App Store Connectに登録するURL用に、以下の静的HTMLを作成済みです。
 
 - `docs/index.html`
-- `docs/public/support.html`
-- `docs/public/privacy.html`
+- `docs/support.html`
+- `docs/privacy.html`
 
 これらを公開できる場所に置き、URLをApp Store Connectへ入力します。
 
@@ -24,8 +24,8 @@ deviationscoreappsupport@gmail.com
 
 置き換え対象:
 
-- `docs/public/support.html`
-- `docs/public/privacy.html`
+- `docs/support.html`
+- `docs/privacy.html`
 - `docs/privacy-policy.md`
 - `docs/app-store-connect-submission-values.md`
 
@@ -46,8 +46,8 @@ GitHub Pagesで `/docs` を公開元にした場合の例:
 
 ```text
 トップURL: https://unnnya5-hue.github.io/DeviationScoreApp/
-サポートURL: https://unnnya5-hue.github.io/DeviationScoreApp/public/support.html
-プライバシーポリシーURL: https://unnnya5-hue.github.io/DeviationScoreApp/public/privacy.html
+サポートURL: https://unnnya5-hue.github.io/DeviationScoreApp/support.html
+プライバシーポリシーURL: https://unnnya5-hue.github.io/DeviationScoreApp/privacy.html
 ```
 
 独自ドメインで公開する場合の例:
