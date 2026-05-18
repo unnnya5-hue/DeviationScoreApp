@@ -6,10 +6,13 @@
 
 App Store Connectに登録するURL用に、以下の静的HTMLを作成済みです。
 
+- `docs/index.html`
 - `docs/public/support.html`
 - `docs/public/privacy.html`
 
-この2つを公開できる場所に置き、URLをApp Store Connectへ入力します。
+これらを公開できる場所に置き、URLをApp Store Connectへ入力します。
+
+GitHub Pagesでは、リポジトリの `main` ブランチにある `/docs` フォルダを公開元にする想定です。
 
 ## 入力前に置き換えるもの
 
@@ -26,13 +29,25 @@ App Store Connectに登録するURL用に、以下の静的HTMLを作成済み�
 - `docs/privacy-policy.md`
 - `docs/app-store-connect-submission-values.md`
 
+## GitHub Pagesで公開する手順
+
+1. GitHubでこのアプリ用のリポジトリを作成する
+2. ローカルリポジトリにGitHubのremoteを追加する
+3. `main` ブランチをGitHubへpushする
+4. GitHubのリポジトリ画面で `Settings > Pages` を開く
+5. `Build and deployment` の `Source` を `Deploy from a branch` にする
+6. `Branch` を `main`、フォルダを `/docs` にする
+7. `Save` を押す
+8. 数分後に公開URLを確認する
+
 ## URL例
 
-GitHub Pagesで公開する場合の例:
+GitHub Pagesで `/docs` を公開元にした場合の例:
 
 ```text
-サポートURL: https://<ユーザー名>.github.io/<リポジトリ名>/support.html
-プライバシーポリシーURL: https://<ユーザー名>.github.io/<リポジトリ名>/privacy.html
+トップURL: https://<ユーザー名>.github.io/<リポジトリ名>/
+サポートURL: https://<ユーザー名>.github.io/<リポジトリ名>/public/support.html
+プライバシーポリシーURL: https://<ユーザー名>.github.io/<リポジトリ名>/public/privacy.html
 ```
 
 独自ドメインで公開する場合の例:
