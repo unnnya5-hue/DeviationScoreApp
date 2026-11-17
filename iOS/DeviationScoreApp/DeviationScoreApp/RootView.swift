@@ -105,12 +105,59 @@ private struct HomeView: View {
     }
 }
 
+private enum DiagnosisFilter: Hashable {
+    case all
+    case new
+    case category(DiagnosisCategory)
+}
+
 private struct DiagnosisListView: View {
+    @State private var filter: DiagnosisFilter = .all
+    @State private var searchText = ""
+
+    private var filteredDiagnoses: [Diagnosis] {
+        let keyword = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        return DiagnosisCatalog.diagnoses.filter { diagnosis in
+            let matchesFilter: Bool
+            switch filter {
+            case .all:
+                matchesFilter = true
+            case .new:
+                matchesFilter = DiagnosisCatalog.isNew(diagnosis)
+            case .category(let category):
+                matchesFilter = diagnosis.category == category
+            }
+
+            guard matchesFilter else { return false }
+            guard !keyword.isEmpty else { return true }
+
+            return [diagnosis.title, diagnosis.shortTitle, diagnosis.summary, diagnosis.category.rawValue]
+                .contains { $0.localizedCaseInsensitiveContains(keyword) }
+        }
+    }
+
+    private var availableCategories: [DiagnosisCategory] {
+        DiagnosisCategory.allCases.filter { category in
+            DiagnosisCatalog.diagnoses.contains { $0.category == category }
+        }
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
+                filterChips
+
+                let results = filteredDiagnoses
+
+                if results.isEmpty {
+                    ContentUnavailableView.search(text: searchText)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 24)
+                }
+
                 ForEach(DiagnosisCategory.allCases) { category in
-                    let diagnoses = DiagnosisCatalog.diagnoses.filter { $0.category == category }
+                    let diagnoses = results.filter { $0.category == category }
 
                     if !diagnoses.isEmpty {
                         VStack(alignment: .leading, spacing: 10) {
@@ -139,7 +186,61 @@ private struct DiagnosisListView: View {
             .padding()
         }
         .navigationTitle("偏差値一覧")
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "診断名・キーワードで検索")
         .appBackground()
+    }
+
+    private var filterChips: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                FilterChip(title: "すべて", systemImage: "square.grid.2x2", color: .pink, isSelected: filter == .all) {
+                    filter = .all
+                }
+
+                if !DiagnosisCatalog.newDiagnosisIDs.isEmpty {
+                    FilterChip(title: "NEW", systemImage: "sparkles", color: .orange, isSelected: filter == .new) {
+                        filter = .new
+                    }
+                }
+
+                ForEach(availableCategories) { category in
+                    FilterChip(
+                        title: category.rawValue,
+                        systemImage: category.symbolName,
+                        color: category.accentColor,
+                        isSelected: filter == .category(category)
+                    ) {
+                        filter = .category(category)
+                    }
+                }
+            }
+            .padding(.vertical, 2)
+        }
+    }
+}
+
+private struct FilterChip: View {
+    let title: String
+    let systemImage: String
+    let color: Color
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Label(title, systemImage: systemImage)
+                .font(.subheadline.bold())
+                .foregroundStyle(isSelected ? .white : color)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .background(isSelected ? color : .white.opacity(0.9))
+                .clipShape(Capsule())
+                .overlay {
+                    Capsule().stroke(color.opacity(0.35), lineWidth: 1)
+                }
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
 
@@ -216,7 +317,7 @@ private struct SettingsView: View {
         List {
             Section("このアプリについて") {
                 LabeledContent("用途", value: "エンタメ診断")
-                LabeledContent("バージョン", value: "MVP 0.2")
+                LabeledContent("バージョン", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-")
                 LabeledContent("診断数", value: "\(DiagnosisCatalog.diagnoses.count)")
             }
 

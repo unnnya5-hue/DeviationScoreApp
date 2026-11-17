@@ -9,6 +9,7 @@ struct DeviationScoreAppApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(historyStore)
+                .preferredColorScheme(.light)
                 .onAppear {
                     AppOpenAdManager.shared.showOnAppLaunchIfPossible()
                     InterstitialAdManager.shared.prepareAd()

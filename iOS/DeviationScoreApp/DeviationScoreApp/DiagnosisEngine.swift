@@ -25,7 +25,7 @@ enum DiagnosisEngine {
             rawScore: rawScore,
             deviationScore: deviation,
             rankTitle: band.title,
-            comment: band.comment,
+            comment: band.commentVariations.randomElement() ?? band.comment,
             measuredAt: Date(),
             elapsedSeconds: elapsedSeconds
         )

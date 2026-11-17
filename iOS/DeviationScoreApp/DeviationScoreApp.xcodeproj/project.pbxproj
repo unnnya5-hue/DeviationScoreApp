@@ -37,7 +37,19 @@
 		BB0000010000000000000112 /* AdMobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerView.swift; sourceTree = "<group>"; };
 		BB0000010000000000000113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0000010000000000000114 /* AdMobFullScreenAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobFullScreenAds.swift; sourceTree = "<group>"; };
+		BB0000010000000000000901 /* DeviationScoreAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviationScoreAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0000010000000000000902 /* DeviationScoreAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviationScoreAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BB0000010000000000000911 /* DeviationScoreAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = DeviationScoreAppTests; sourceTree = "<group>"; };
+		BB0000010000000000000912 /* DeviationScoreAppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = DeviationScoreAppUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0000010000000000000941 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = BB0000010000000000000601 /* Project object */; proxyType = 1; remoteGlobalIDString = BB0000010000000000000401; remoteInfo = DeviationScoreApp; };
+		BB0000010000000000000942 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = BB0000010000000000000601 /* Project object */; proxyType = 1; remoteGlobalIDString = BB0000010000000000000401; remoteInfo = DeviationScoreApp; };
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB0000010000000000000201 /* Frameworks */ = {
@@ -48,6 +60,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB0000010000000000000922 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		BB0000010000000000000925 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				BB0000010000000000000302 /* DeviationScoreApp */,
+				BB0000010000000000000911 /* DeviationScoreAppTests */,
+				BB0000010000000000000912 /* DeviationScoreAppUITests */,
 				BB0000010000000000000303 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				BB0000010000000000000110 /* DeviationScoreApp.app */,
+				BB0000010000000000000901 /* DeviationScoreAppTests.xctest */,
+				BB0000010000000000000902 /* DeviationScoreAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +128,52 @@
 			productReference = BB0000010000000000000110 /* DeviationScoreApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB0000010000000000000931 /* DeviationScoreAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0000010000000000000971 /* Build configuration list for PBXNativeTarget "DeviationScoreAppTests" */;
+			buildPhases = (
+				BB0000010000000000000921 /* Sources */,
+				BB0000010000000000000922 /* Frameworks */,
+				BB0000010000000000000923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0000010000000000000951 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB0000010000000000000911 /* DeviationScoreAppTests */,
+			);
+			name = DeviationScoreAppTests;
+			packageProductDependencies = (
+			);
+			productName = DeviationScoreAppTests;
+			productReference = BB0000010000000000000901 /* DeviationScoreAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB0000010000000000000932 /* DeviationScoreAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0000010000000000000972 /* Build configuration list for PBXNativeTarget "DeviationScoreAppUITests" */;
+			buildPhases = (
+				BB0000010000000000000924 /* Sources */,
+				BB0000010000000000000925 /* Frameworks */,
+				BB0000010000000000000926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0000010000000000000952 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB0000010000000000000912 /* DeviationScoreAppUITests */,
+			);
+			name = DeviationScoreAppUITests;
+			packageProductDependencies = (
+			);
+			productName = DeviationScoreAppUITests;
+			productReference = BB0000010000000000000902 /* DeviationScoreAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +186,14 @@
 				TargetAttributes = {
 					BB0000010000000000000401 = {
 						CreatedOnToolsVersion = 26.4.1;
+					};
+					BB0000010000000000000931 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = BB0000010000000000000401;
+					};
+					BB0000010000000000000932 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = BB0000010000000000000401;
 					};
 				};
 			};
@@ -144,6 +216,8 @@
 			projectRoot = "";
 			targets = (
 				BB0000010000000000000401 /* DeviationScoreApp */,
+				BB0000010000000000000931 /* DeviationScoreAppTests */,
+				BB0000010000000000000932 /* DeviationScoreAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +231,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB0000010000000000000923 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		BB0000010000000000000926 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,7 +254,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB0000010000000000000921 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		BB0000010000000000000924 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0000010000000000000951 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = BB0000010000000000000401 /* DeviationScoreApp */; targetProxy = BB0000010000000000000941 /* PBXContainerItemProxy */; };
+		BB0000010000000000000952 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = BB0000010000000000000401 /* DeviationScoreApp */; targetProxy = BB0000010000000000000942 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BB0000010000000000000801 /* Debug */ = {
@@ -307,7 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 54S9M7U65B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -317,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 54S9M7U65B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -345,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +438,80 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BB0000010000000000000961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54S9M7U65B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviationScoreApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviationScoreApp";
+			};
+			name = Debug;
+		};
+		BB0000010000000000000962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54S9M7U65B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviationScoreApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviationScoreApp";
+			};
+			name = Release;
+		};
+		BB0000010000000000000963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54S9M7U65B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeviationScoreApp;
+			};
+			name = Debug;
+		};
+		BB0000010000000000000964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54S9M7U65B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairi.DeviationScoreAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeviationScoreApp;
 			};
 			name = Release;
 		};
@@ -375,6 +532,24 @@
 			buildConfigurations = (
 				BB0000010000000000000803 /* Debug */,
 				BB0000010000000000000804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0000010000000000000971 /* Build configuration list for PBXNativeTarget "DeviationScoreAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0000010000000000000961 /* Debug */,
+				BB0000010000000000000962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0000010000000000000972 /* Build configuration list for PBXNativeTarget "DeviationScoreAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0000010000000000000963 /* Debug */,
+				BB0000010000000000000964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

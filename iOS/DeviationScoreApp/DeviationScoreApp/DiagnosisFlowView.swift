@@ -25,7 +25,7 @@ struct DiagnosisFlowView: View {
     }
 
     private var tracksElapsedTime: Bool {
-        diagnosis.id == "iq-like"
+        ["iq-like", "logic-puzzle"].contains(diagnosis.id)
     }
 
     private var numericValue: Double? {
@@ -49,10 +49,17 @@ struct DiagnosisFlowView: View {
         }
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
-                Button("完了") {
+                Button("閉じる") {
                     isNumberFocused = false
                 }
+                Spacer()
+                // キーボード表示中は「決定して次へ」が隠れるため、キーボード上からも回答を確定できるようにする
+                Button(currentIndex + 1 == diagnosis.questions.count ? "結果を見る" : "次へ") {
+                    submitNumber()
+                }
+                .bold()
+                .disabled(numericValue == nil)
+                .accessibilityIdentifier("keyboard-submit")
             }
         }
     }
@@ -204,6 +211,7 @@ struct DiagnosisFlowView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
                 .buttonStyle(.plain)
+                .accessibilityIdentifier("choice-option-\(option.id)")
             }
         }
     }
@@ -216,6 +224,7 @@ struct DiagnosisFlowView: View {
                     .monospacedDigit()
                     .keyboardType(.decimalPad)
                     .focused($isNumberFocused)
+                    .accessibilityIdentifier("number-field")
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 14)
                     .background(.white)
@@ -240,6 +249,7 @@ struct DiagnosisFlowView: View {
             .buttonStyle(.borderedProminent)
             .tint(diagnosis.category.accentColor)
             .disabled(numericValue == nil)
+            .accessibilityIdentifier("number-submit")
         }
         .padding()
         .background(.white.opacity(0.92))

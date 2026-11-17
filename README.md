@@ -9,6 +9,9 @@
 - [プライバシーポリシー文案](docs/privacy-policy.md)
 - [公開準備チェックリスト](docs/release-checklist.md)
 - [AdMob設定メモ](docs/admob-setup.md)
+- [診断候補・収録状況一覧](docs/diagnosis_candidates.md)（何を追加済みで何が未追加かはここで管理）
+- [追加診断 質問レビュー一覧](docs/new_diagnosis_questions_review.md)
+- [v1.1 テスト結果報告（エビデンス）](docs/test-evidence/v1.1/README.md)
 
 ## 初期方針
 
@@ -28,6 +31,8 @@
 - 診断履歴
 
 ## 現在の診断
+
+v1.0 公開分は以下の21本です。v1.1 で追加する15本と未収録の候補は [診断候補・収録状況一覧](docs/diagnosis_candidates.md) を参照してください。
 
 - 婚活偏差値
 - IQ風クイズ偏差値

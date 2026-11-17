@@ -75,6 +75,19 @@ struct GameBadge: View {
     }
 }
 
+struct NewBadge: View {
+    var body: some View {
+        Text("NEW")
+            .font(.caption2.weight(.black))
+            .foregroundStyle(.white)
+            .padding(.horizontal, 6)
+            .padding(.vertical, 2)
+            .background(Color.orange)
+            .clipShape(Capsule())
+            .accessibilityLabel("新着")
+    }
+}
+
 struct DiagnosisCard: View {
     let diagnosis: Diagnosis
 
@@ -92,9 +105,14 @@ struct DiagnosisCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(diagnosis.title)
-                            .font(.headline)
-                            .foregroundStyle(.primary)
+                        HStack(spacing: 6) {
+                            Text(diagnosis.title)
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            if DiagnosisCatalog.isNew(diagnosis) {
+                                NewBadge()
+                            }
+                        }
                         Text(diagnosis.category.rawValue)
                             .font(.caption.bold())
                             .foregroundStyle(diagnosis.category.accentColor)

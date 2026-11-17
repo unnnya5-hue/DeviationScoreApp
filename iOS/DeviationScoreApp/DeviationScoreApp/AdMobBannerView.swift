@@ -11,6 +11,15 @@ enum AdMobConfiguration {
     private static var isPresentingFullScreenAd = false
     private static var lastFullScreenAdDismissedAt: Date?
 
+    /// UIテスト用: 起動引数 -disableAdsForUITesting で広告を止める（DEBUGビルドのみ有効）。
+    static var isDisabledForUITesting: Bool {
+        #if DEBUG
+        return ProcessInfo.processInfo.arguments.contains("-disableAdsForUITesting")
+        #else
+        return false
+        #endif
+    }
+
     static var hasApplicationID: Bool {
         guard let appID = Bundle.main.object(forInfoDictionaryKey: "GADApplicationIdentifier") as? String else {
             return false
@@ -20,14 +29,14 @@ enum AdMobConfiguration {
     }
 
     static func startSDKIfNeeded() {
-        guard hasApplicationID, !didStartSDK else { return }
+        guard hasApplicationID, !isDisabledForUITesting, !didStartSDK else { return }
 
         didStartSDK = true
         MobileAds.shared.start()
     }
 
     static func canPresentFullScreenAd(cooldown: TimeInterval) -> Bool {
-        guard !isPresentingFullScreenAd else { return false }
+        guard !isDisabledForUITesting, !isPresentingFullScreenAd else { return false }
 
         if let lastFullScreenAdDismissedAt {
             return Date().timeIntervalSince(lastFullScreenAdDismissedAt) >= cooldown
@@ -79,7 +88,7 @@ struct AdBannerSlot: View {
             }
             .frame(height: 0)
 
-            if isRunningForPreview {
+            if isRunningForPreview || AdMobConfiguration.isDisabledForUITesting {
                 previewBanner
             } else if !AdMobConfiguration.hasApplicationID {
                 missingConfigurationBanner

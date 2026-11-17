@@ -188,6 +188,12 @@ struct ScoreBand: Identifiable, Codable, Hashable {
     let minScore: Int
     let title: String
     let comment: String
+    var extraComments: [String] = []
+
+    /// 結果作成時にランダムで1つ選ぶコメント候補。
+    var commentVariations: [String] {
+        [comment] + extraComments
+    }
 }
 
 struct Diagnosis: Identifiable, Codable, Hashable {
