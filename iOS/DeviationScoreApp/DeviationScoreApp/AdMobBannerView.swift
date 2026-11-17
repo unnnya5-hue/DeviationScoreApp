@@ -1,5 +1,6 @@
 import GoogleMobileAds
 import SwiftUI
+import UserMessagingPlatform
 
 enum AdMobConfiguration {
     static let isUsingTestAds = false
@@ -28,8 +29,13 @@ enum AdMobConfiguration {
         return !appID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
+    /// UMP で広告リクエストが許可されているか。同意確認が済むまで広告SDKを起動・リクエストしない。
+    static var canRequestAds: Bool {
+        hasApplicationID && !isDisabledForUITesting && ConsentInformation.shared.canRequestAds
+    }
+
     static func startSDKIfNeeded() {
-        guard hasApplicationID, !isDisabledForUITesting, !didStartSDK else { return }
+        guard canRequestAds, !didStartSDK else { return }
 
         didStartSDK = true
         MobileAds.shared.start()
@@ -58,6 +64,7 @@ enum AdMobConfiguration {
 struct AdBannerSlot: View {
     let placement: String
 
+    @ObservedObject private var consent = AdConsentManager.shared
     @State private var availableWidth: CGFloat = 0
 
     var body: some View {
@@ -92,6 +99,9 @@ struct AdBannerSlot: View {
                 previewBanner
             } else if !AdMobConfiguration.hasApplicationID {
                 missingConfigurationBanner
+            } else if !consent.canRequestAds {
+                // 同意確認が済むまでは広告を読み込まず、枠だけ確保する
+                waitingForConsentBanner
             } else if availableWidth > 0 {
                 banner(for: availableWidth)
             }
@@ -115,6 +125,12 @@ struct AdBannerSlot: View {
                     .font(.caption.bold())
                     .foregroundStyle(.secondary)
             }
+    }
+
+    private var waitingForConsentBanner: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(Color.gray.opacity(0.08))
+            .frame(height: 56)
     }
 
     private var missingConfigurationBanner: some View {

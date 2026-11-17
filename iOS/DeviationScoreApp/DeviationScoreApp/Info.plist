@@ -22,6 +22,15 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-6961277874965643~9419414388</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>あなたの興味に合った広告を表示するために使用します。許可しない場合も、アプリはすべての機能を利用できます。</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.entertainment</string>
 	<key>UIApplicationSceneManifest</key>

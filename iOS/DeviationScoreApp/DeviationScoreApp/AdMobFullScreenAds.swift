@@ -36,7 +36,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     }
 
     func loadAd() async {
-        guard AdMobConfiguration.hasApplicationID, !AdMobConfiguration.isDisabledForUITesting else { return }
+        guard AdMobConfiguration.canRequestAds else { return }
         guard !isLoadingAd, !isAdAvailable else {
             if shouldShowAfterLoad {
                 shouldShowAfterLoad = false
@@ -143,7 +143,7 @@ final class InterstitialAdManager: NSObject, FullScreenContentDelegate {
     }
 
     func loadAd() async {
-        guard AdMobConfiguration.hasApplicationID, !AdMobConfiguration.isDisabledForUITesting else { return }
+        guard AdMobConfiguration.canRequestAds else { return }
         guard !isLoadingAd, !isAdAvailable else { return }
 
         AdMobConfiguration.startSDKIfNeeded()

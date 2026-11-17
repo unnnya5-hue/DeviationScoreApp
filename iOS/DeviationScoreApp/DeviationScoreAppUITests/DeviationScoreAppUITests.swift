@@ -163,6 +163,38 @@ final class DeviationScoreAppUITests: XCTestCase {
         capture("10-1_設定画面_バージョン")
     }
 
+    // MARK: - 広告の同意・トラッキング許可
+
+    /// 初回起動でATTのトラッキング許可ダイアログが出て、選んだ結果が設定画面に反映されること。
+    /// 広告自体は読み込まない（-disableAdsForUITesting）。同意確認だけ -testConsentFlow で動かす。
+    func test11_TrackingPermissionDialogAndSettings() throws {
+        app.terminate()
+        app.resetAuthorizationStatus(for: .userTracking)
+        app.launchArguments += ["-testConsentFlow"]
+        app.launch()
+
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let alert = springboard.alerts.firstMatch
+        XCTAssertTrue(alert.waitForExistence(timeout: 20), "トラッキング許可のダイアログが表示されない")
+        XCTAssertTrue(alert.label.contains("いろいろ偏差値診断") || alert.staticTexts.allElementsBoundByIndex.contains { $0.label.contains("いろいろ偏差値診断") }, "アプリ名を含むダイアログではない: \(alert.label)")
+        XCTAssertTrue(alert.staticTexts.allElementsBoundByIndex.contains { $0.label.contains("興味に合った広告") }, "利用目的の説明文が表示されていない")
+        capture("11-1_トラッキング許可ダイアログ", screenshot: XCUIScreen.main.screenshot())
+
+        // 「追跡しないように要求」を選ぶ（言語設定に依存しないよう、許可以外のボタンを押す）
+        let denyButton = alert.buttons.allElementsBoundByIndex.first { !$0.label.contains("Allow") && !$0.label.contains("許可") }
+        XCTAssertNotNil(denyButton, "拒否ボタンが見つからない")
+        denyButton?.tap()
+
+        let tab = app.tabBars.buttons["設定"]
+        XCTAssertTrue(tab.waitForExistence(timeout: 10))
+        tab.tap()
+        let status = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "トラッキング")).matching(NSPredicate(format: "label CONTAINS %@", "許可しない")).firstMatch
+        XCTAssertTrue(status.waitForExistence(timeout: 5), "設定画面にトラッキング状態「許可しない」が表示されない")
+        XCTAssertTrue(app.staticTexts["広告とプライバシー"].exists || app.staticTexts["広告とプライバシー".uppercased()].exists)
+        XCTAssertTrue(app.buttons["open-settings-button"].exists, "iPhoneの設定を開くボタンがない")
+        capture("11-2_設定画面_広告とプライバシー")
+    }
+
     // MARK: - Helpers
 
     private func openDiagnosisTab() {
@@ -242,8 +274,8 @@ final class DeviationScoreAppUITests: XCTestCase {
         }
     }
 
-    private func capture(_ name: String) {
-        let attachment = XCTAttachment(screenshot: app.screenshot())
+    private func capture(_ name: String, screenshot: XCUIScreenshot? = nil) {
+        let attachment = XCTAttachment(screenshot: screenshot ?? app.screenshot())
         attachment.name = name
         attachment.lifetime = .keepAlways
         add(attachment)
