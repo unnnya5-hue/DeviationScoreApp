@@ -1,15 +1,14 @@
-import AppTrackingTransparency
 import GoogleMobileAds
 import SwiftUI
 import UserMessagingPlatform
 
-/// 広告の同意まわり（UMP の同意フォーム → ATT のトラッキング許可）をまとめて扱う。
+/// 広告の同意まわり（UMP の同意フォーム）をまとめて扱う。
 ///
+/// このアプリはトラッキング（ATT による IDFA 取得）を行わない方針。
 /// 流れ:
 /// 1. 起動してアプリがアクティブになったら UMP の同意情報を更新し、必要なら同意フォームを出す
 ///    （EEA・英国など同意が必要な地域の利用者だけに表示される）
-/// 2. ATT のトラッキング許可ダイアログを出す（未確認の場合のみ。AdMob 側で IDFA 説明メッセージを設定していれば UMP が先に出す）
-/// 3. 広告をリクエストしてよい状態（canRequestAds）になってから SDK を起動して広告を読み込む
+/// 2. 広告をリクエストしてよい状態（canRequestAds）になってから SDK を起動して広告を読み込む
 @MainActor
 final class AdConsentManager: ObservableObject {
     static let shared = AdConsentManager()
@@ -18,7 +17,6 @@ final class AdConsentManager: ObservableObject {
     @Published private(set) var canRequestAds = false
     /// 設定画面に「広告のプライバシー設定」を出す必要があるか（同意が必要な地域の利用者のみ true）。
     @Published private(set) var isPrivacyOptionsRequired = false
-    @Published private(set) var trackingStatus: ATTrackingManager.AuthorizationStatus = ATTrackingManager.trackingAuthorizationStatus
 
     /// UIテスト中は同意確認も止める。ただし起動引数 -testConsentFlow があれば同意確認だけ実行する（広告は読み込まない）。
     private static var isConsentFlowDisabled: Bool {
@@ -39,7 +37,6 @@ final class AdConsentManager: ObservableObject {
     }
 
     /// 起動時に1回だけ実行する。アプリがアクティブ（scenePhase == .active）になってから呼ぶこと。
-    /// ATT のダイアログはアクティブでないと表示されないため。
     func gatherConsentIfNeeded() async {
         guard !Self.isConsentFlowDisabled, !didGather, !isGathering else { return }
         isGathering = true
@@ -58,7 +55,6 @@ final class AdConsentManager: ObservableObject {
             #endif
         }
 
-        await requestTrackingAuthorizationIfNeeded()
         refreshStatus()
     }
 
@@ -74,16 +70,9 @@ final class AdConsentManager: ObservableObject {
         refreshStatus()
     }
 
-    private func requestTrackingAuthorizationIfNeeded() async {
-        guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else { return }
-
-        _ = await ATTrackingManager.requestTrackingAuthorization()
-    }
-
     private func refreshStatus() {
         canRequestAds = AdMobConfiguration.canRequestAds
         isPrivacyOptionsRequired = ConsentInformation.shared.privacyOptionsRequirementStatus == .required
-        trackingStatus = ATTrackingManager.trackingAuthorizationStatus
     }
 
     private static func makeRequestParameters() -> RequestParameters {
@@ -103,12 +92,11 @@ final class AdConsentManager: ObservableObject {
 /// 設定画面の「広告とプライバシー」欄。
 struct AdPrivacySection: View {
     @ObservedObject private var consent = AdConsentManager.shared
-    @Environment(\.openURL) private var openURL
 
     var body: some View {
         Section {
-            LabeledContent("トラッキング", value: trackingStatusText)
-                .accessibilityIdentifier("tracking-status")
+            LabeledContent("広告配信", value: "Google AdMob")
+                .accessibilityIdentifier("ad-provider")
 
             if consent.isPrivacyOptionsRequired {
                 Button("広告の同意設定を変更") {
@@ -116,27 +104,10 @@ struct AdPrivacySection: View {
                 }
                 .accessibilityIdentifier("privacy-options-button")
             }
-
-            if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                Button("iPhoneの設定でトラッキングを変更") {
-                    openURL(settingsURL)
-                }
-                .accessibilityIdentifier("open-settings-button")
-            }
         } header: {
             Text("広告とプライバシー")
         } footer: {
-            Text("このアプリは広告（Google AdMob）で運営しています。トラッキングを許可しない場合も、アプリはすべて利用できます（表示される広告がパーソナライズされなくなります）。")
-        }
-    }
-
-    private var trackingStatusText: String {
-        switch consent.trackingStatus {
-        case .authorized: return "許可"
-        case .denied: return "許可しない"
-        case .restricted: return "制限あり"
-        case .notDetermined: return "未設定"
-        @unknown default: return "不明"
+            Text("このアプリは広告で運営しています。他社のアプリやWebサイトをまたいだトラッキングは行いません。")
         }
     }
 }

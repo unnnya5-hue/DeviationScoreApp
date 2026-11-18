@@ -1,42 +1,97 @@
 {
-  "devicesAndConfigurations" : [
-    {
-      "device" : {
-        "architecture" : "arm64",
-        "deviceId" : "E716B851-2540-43AC-AF9F-13EF9EB9FAB2",
-        "deviceName" : "iPhone 17 Pro",
-        "modelName" : "iPhone 17 Pro",
-        "osBuildNumber" : "23F77",
-        "osVersion" : "26.5",
-        "platform" : "iOS Simulator"
-      },
-      "expectedFailures" : 0,
-      "failedTests" : 0,
-      "passedTests" : 34,
-      "skippedTests" : 0,
-      "testPlanConfiguration" : {
-        "configurationId" : "1",
-        "configurationName" : "Test Scheme Action"
+  "fullRun": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "A1200059-BB36-41B0-90B6-A25E3680F98A",
+          "deviceName": "iPhone 17 Pro Max",
+          "modelName": "iPhone 17 Pro Max",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 2,
+        "passedTests": 32,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
       }
-    }
-  ],
-  "environmentDescription" : "DeviationScoreApp · Built with macOS 26.5.1",
-  "expectedFailures" : 0,
-  "failedTests" : 0,
-  "finishTime" : 1794897473.359,
-  "passedTests" : 34,
-  "result" : "Passed",
-  "skippedTests" : 0,
-  "startTime" : 1794897061.151,
-  "statistics" : [
-
-  ],
-  "testFailures" : [
-
-  ],
-  "title" : "Test - DeviationScoreApp",
-  "topInsights" : [
-
-  ],
-  "totalTestCount" : 34
+    ],
+    "environmentDescription": "DeviationScoreApp · Built with macOS 26.5.1",
+    "expectedFailures": 0,
+    "failedTests": 2,
+    "finishTime": 1795014356.942,
+    "passedTests": 32,
+    "result": "Failed",
+    "skippedTests": 0,
+    "startTime": 1795013909.395,
+    "statistics": [],
+    "testFailures": [
+      {
+        "failureText": "Test crashed with signal term.",
+        "targetName": "DeviationScoreAppUITests",
+        "testIdentifier": 24,
+        "testIdentifierString": "DeviationScoreAppUITests/test01_DiagnosisListShowsFilterChipsAndNewBadges()",
+        "testIdentifierURL": "test://com.apple.xcode/DeviationScoreApp/DeviationScoreAppUITests/DeviationScoreAppUITests/test01_DiagnosisListShowsFilterChipsAndNewBadges",
+        "testName": "test01_DiagnosisListShowsFilterChipsAndNewBadges()"
+      },
+      {
+        "failureText": "Test crashed with signal term.",
+        "targetName": "DeviationScoreAppUITests",
+        "testIdentifier": 25,
+        "testIdentifierString": "DeviationScoreAppUITests/test02_FilterByNewShowsOnlyAddedDiagnoses()",
+        "testIdentifierURL": "test://com.apple.xcode/DeviationScoreApp/DeviationScoreAppUITests/DeviationScoreAppUITests/test02_FilterByNewShowsOnlyAddedDiagnoses",
+        "testName": "test02_FilterByNewShowsOnlyAddedDiagnoses()"
+      }
+    ],
+    "title": "Test - DeviationScoreApp",
+    "topInsights": [
+      {
+        "category": "Common Failures",
+        "impact": "100% of failures",
+        "text": "2 runs of 2 tests failed with Test crashed with signal term."
+      }
+    ],
+    "totalTestCount": 34
+  },
+  "rerunOfCrashedTests": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "A1200059-BB36-41B0-90B6-A25E3680F98A",
+          "deviceName": "iPhone 17 Pro Max",
+          "modelName": "iPhone 17 Pro Max",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 2,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "DeviationScoreApp · Built with macOS 26.5.1",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1795014439.96,
+    "passedTests": 2,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1795014369.423,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - DeviationScoreApp",
+    "topInsights": [],
+    "totalTestCount": 2
+  }
 }
