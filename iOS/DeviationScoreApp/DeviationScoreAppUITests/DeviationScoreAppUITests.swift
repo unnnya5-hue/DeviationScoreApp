@@ -156,9 +156,9 @@ final class DeviationScoreAppUITests: XCTestCase {
         XCTAssertTrue(tab.waitForExistence(timeout: 10))
         tab.tap()
 
-        // LabeledContent はラベルと値が「バージョン、1.1」のように1要素に結合される
-        let version = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "バージョン")).matching(NSPredicate(format: "label CONTAINS %@", "1.1")).firstMatch
-        XCTAssertTrue(version.waitForExistence(timeout: 5), "設定画面にバージョン1.1が表示されていない")
+        // LabeledContent はラベルと値が「バージョン、1.2」のように1要素に結合される
+        let version = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "バージョン")).matching(NSPredicate(format: "label CONTAINS %@", "1.2")).firstMatch
+        XCTAssertTrue(version.waitForExistence(timeout: 5), "設定画面にバージョン1.2が表示されていない")
         XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "MVP")).firstMatch.exists)
         capture("10-1_設定画面_バージョン")
     }
