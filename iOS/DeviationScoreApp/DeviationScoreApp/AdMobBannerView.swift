@@ -147,7 +147,7 @@ struct AdBannerSlot: View {
     }
 
     private func banner(for width: CGFloat) -> some View {
-        let adSize = largeAnchoredAdaptiveBanner(width: max(width, 320))
+        let adSize = largeAnchoredAdaptiveBanner(width: width)
 
         return BannerViewContainer(
             adSize: adSize,
@@ -164,25 +164,48 @@ struct AdBannerSlot: View {
     }
 }
 
+/// BannerView を直接 SwiftUI に置くと、SDK が親ビューに合わせて広げてしまい枠からはみ出すことがある。
+/// 専用のコンテナに入れて広告サイズで固定し、はみ出た分は切り取る。
 private struct BannerViewContainer: UIViewRepresentable {
     let adSize: AdSize
     let adUnitID: String
 
-    func makeUIView(context: Context) -> BannerView {
+    func makeUIView(context: Context) -> UIView {
         AdMobConfiguration.startSDKIfNeeded()
+
+        let container = UIView()
+        container.clipsToBounds = true
+        container.backgroundColor = .clear
 
         let banner = BannerView(adSize: adSize)
         banner.adUnitID = adUnitID
         banner.delegate = context.coordinator
+        banner.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(banner)
+
+        let width = banner.widthAnchor.constraint(equalToConstant: adSize.size.width)
+        let height = banner.heightAnchor.constraint(equalToConstant: adSize.size.height)
+        NSLayoutConstraint.activate([
+            banner.centerXAnchor.constraint(equalTo: container.centerXAnchor),
+            banner.centerYAnchor.constraint(equalTo: container.centerYAnchor),
+            width,
+            height,
+        ])
+
+        context.coordinator.banner = banner
+        context.coordinator.widthConstraint = width
+        context.coordinator.heightConstraint = height
         banner.load(Request())
-        return banner
+        return container
     }
 
-    func updateUIView(_ banner: BannerView, context: Context) {
-        if banner.adSize.size != adSize.size {
-            banner.adSize = adSize
-            banner.load(Request())
-        }
+    func updateUIView(_ container: UIView, context: Context) {
+        guard let banner = context.coordinator.banner, banner.adSize.size != adSize.size else { return }
+
+        context.coordinator.widthConstraint?.constant = adSize.size.width
+        context.coordinator.heightConstraint?.constant = adSize.size.height
+        banner.adSize = adSize
+        banner.load(Request())
     }
 
     func makeCoordinator() -> BannerCoordinator {
@@ -191,6 +214,10 @@ private struct BannerViewContainer: UIViewRepresentable {
 }
 
 private final class BannerCoordinator: NSObject, BannerViewDelegate {
+    weak var banner: BannerView?
+    var widthConstraint: NSLayoutConstraint?
+    var heightConstraint: NSLayoutConstraint?
+
     func bannerViewDidReceiveAd(_ bannerView: BannerView) {
         #if DEBUG
         print("AdMob banner loaded.")
